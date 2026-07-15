@@ -274,6 +274,24 @@ export default function Home() {
           📍 Shiv Enclave Apartments, Near Ajmer Hospital & Savitri School,
           Civil Lines, Ajmer
         </p>
+        <a
+  href="https://maps.app.goo.gl/aPpDrVNk3fE9bckU6"
+  target="_blank"
+  rel="noopener noreferrer"
+  style={{
+    display: "inline-block",
+    marginTop: "15px",
+    marginBottom: "20px",
+    backgroundColor: "white",
+    color: "#0B3C5D",
+    padding: "12px 24px",
+    borderRadius: "10px",
+    textDecoration: "none",
+    fontWeight: "bold",
+  }}
+>
+  View Clinic Location
+</a>
 
         <p style={{ fontSize: "20px" }}>📞 +91 70235 62036</p>
 
