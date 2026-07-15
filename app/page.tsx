@@ -249,13 +249,16 @@ export default function Home() {
 }}
             >
               <h3
-                style={{
-                  color: "#0B3C5D",
-                  margin: 0,
-                }}
-              >
-                {service}
-              </h3>
+  style={{
+    color: "#0B3C5D",
+    margin: 0,
+    display: "flex",
+    alignItems: "center",
+    gap: "12px",
+  }}
+>
+  🦴 {service}
+</h3>
             </div>
           ))}
         </div>
