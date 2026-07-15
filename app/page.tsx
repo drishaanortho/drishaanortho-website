@@ -11,29 +11,30 @@ export default function Home() {
   ];
 
   return (
-    <main
-      <nav
-  style={{
-    position: "sticky",
-    top: 0,
-    backgroundColor: "white",
-    padding: "15px",
-    display: "flex",
-    justifyContent: "space-around",
-    zIndex: 1000,
-  }}
->
+  <main
+    style={{
+      fontFamily: "Arial, sans-serif",
+      backgroundColor: "#f4f8fc",
+      minHeight: "100vh",
+    }}
+  >
+
+    <nav
+      style={{
+        position: "sticky",
+        top: 0,
+        backgroundColor: "white",
+        padding: "15px",
+        display: "flex",
+        justifyContent: "space-around",
+        zIndex: 1000,
+      }}
+    >
   <a href="#home">Home</a>
   <a href="#about">About</a>
   <a href="#services">Services</a>
   <a href="#contact">Contact</a>
 </nav>
-      style={{
-        fontFamily: "Arial, sans-serif",
-        backgroundColor: "#f4f8fc",
-        minHeight: "100vh",
-      }}
-    >
       {/* NAVBAR */}
 
       {/* HERO SECTION */}
