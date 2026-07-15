@@ -203,10 +203,7 @@ export default function Home() {
             color: "#444",
           }}
         >
-          Dr. Ishaan Meena is an Orthopaedic Surgeon with expertise in trauma
-          surgery, fracture management, shoulder surgery, arthroscopy, sports
-          injuries, joint replacement, spine disorders, CTEV correction and
-          management of nonunion and malunion cases.
+          Dr. Ishaan Meena is an Orthopaedic and Shoulder Surgeon specializing in trauma care, shoulder surgery, arthroscopy, sports injuries, joint replacement, spine disorders, deformity correction, and complex fracture management.
         </p>
       </section>
 
