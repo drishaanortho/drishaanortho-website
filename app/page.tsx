@@ -21,6 +21,46 @@ export default function Home() {
       <section><h2>About Dr. Ishaan Meena</h2><p>Dr. Ishaan Meena is an Orthopaedic Surgeon with expertise in trauma, fracture management, shoulder surgery, arthroscopy, sports injuries, joint replacement and spine disorders.</p></section>
       <section style={{marginTop:"40px"}}><h2>Our Services</h2><ul><li>Trauma & Fracture Care</li><li>Shoulder Surgery</li><li>Arthroscopy</li><li>Sports Injury Treatment</li><li>Joint Replacement</li><li>Spine Disorders</li><li>CTEV & Pediatric Orthopaedics</li><li>Arthritis, Malunion & Nonunion</li></ul></section>
       <section style={{marginTop:"40px"}}><h2>Contact</h2><p>📞 +91 7023562036</p><p>📧 dr.ishaanmeena@gmail.com</p><p><a href="https://maps.app.goo.gl/aPpDrVNk3fE9bckU6">View Clinic on Google Maps</a></p></section>
-    </main>
+   <section style={{ marginTop: "50px", textAlign: "center" }}>
+  <h2>Contact</h2>
+
+  <p><strong>Dr. Ishaan Meena Orthopaedic Clinic</strong></p>
+
+  <p>
+    Shiv Enclave Apartments,<br />
+    Near Ajmer Hospital & Savitri School,<br />
+    Civil Lines, Ajmer, Rajasthan
+  </p>
+
+  <p>📞 +91 7023562036</p>
+  <p>📧 dr.ishaanmeena@gmail.com</p>
+  <p>🕒 Clinic Timing: 3:00 PM – 8:00 PM (Everyday)</p>
+
+  <a
+    href="https://maps.app.goo.gl/aPpDrVNk3fE9bckU6"
+    target="_blank"
+  >
+    <button>📍 Open in Google Maps</button>
+  </a>
+</section>
+
+<a
+  href="https://wa.me/917023562036"
+  target="_blank"
+  style={{
+    position: "fixed",
+    bottom: "20px",
+    right: "20px",
+    background: "#25D366",
+    color: "white",
+    padding: "15px",
+    borderRadius: "50%",
+    textDecoration: "none",
+    fontSize: "24px",
+    boxShadow: "0 4px 10px rgba(0,0,0,0.3)"
+  }}
+>
+  💬
+</a> </main>
   );
 }
