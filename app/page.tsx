@@ -69,13 +69,13 @@ export default function Home() {
             maxWidth: "320px",
             borderRadius: "20px",
             boxShadow: "0 10px 30px rgba(0,0,0,0.2)",
-            marginBottom: "30px",
+            marginBottom: "15px",
           }}
         />
 
         <h1
           style={{
-            fontSize: "52px",
+            fontSize: "42px",
             color: "#0B3C5D",
             marginBottom: "10px",
           }}
@@ -83,15 +83,16 @@ export default function Home() {
           Dr. Ishaan Meena
         </h1>
 
-        <h2
-          style={{
-            color: "#333",
-            fontSize: "32px",
-            marginBottom: "20px",
-          }}
-        >
-          Orthopaedic & Shoulder Surgeon
-        </h2>
+      <h2
+  style={{
+    color: "#333",
+    fontSize: "24px",
+    marginTop: "10px",
+    marginBottom: "20px",
+  }}
+>
+  Orthopaedic & Shoulder Surgeon
+</h2>
 
         <p style={{ fontSize: "22px" }}>
           <strong>MS (Orthopaedics)</strong> | Fellowship in Advanced Shoulder
