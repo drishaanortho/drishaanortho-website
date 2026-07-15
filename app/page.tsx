@@ -41,8 +41,8 @@ export default function Home() {
         id="home"
         style={{
           maxWidth: "1200px",
-          margin: "50px auto",
-          padding: "20px",
+          margin: "10px auto",
+padding: "10px 20px",
           display: "flex",
           gap: "40px",
           alignItems: "center",
@@ -54,7 +54,7 @@ export default function Home() {
         <div style={{ flex: 1 }}>
           <h1
             style={{
-              fontSize: "55px",
+              fontSize: "48px",
               color: "#0B3C5D",
               marginBottom: "10px",
             }}
@@ -138,7 +138,8 @@ export default function Home() {
           src="/dr-ishaan.jpg"
           alt="Dr Ishaan Meena"
           style={{
-            width: "320px",
+            width: "100%",
+maxWidth: "320px",
             borderRadius: "20px",
             boxShadow: "0 10px 30px rgba(0,0,0,0.2)",
           }}
