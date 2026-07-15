@@ -241,12 +241,11 @@ export default function Home() {
             <div
               key={service}
               style={{
-  backgroundColor: "#ffffff",
+  backgroundColor: "white",
   padding: "22px",
   borderRadius: "20px",
-  boxShadow: "0 8px 25px rgba(0,0,0,0.08)",
-  border: "1px solid #e5e7eb",
-  transition: "all 0.3s ease",
+  border: "1px solid #E5E7EB",
+  boxShadow: "0 8px 20px rgba(0,0,0,0.08)",
 }}
             >
               <h3
