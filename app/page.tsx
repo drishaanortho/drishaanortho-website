@@ -126,6 +126,7 @@ export default function Home() {
             flexWrap: "wrap",
             justifyContent: "center",
             marginTop: "25px",
+            marginBottom: "50px",
           }}
         >
           <a href="/appointment">
@@ -242,7 +243,7 @@ export default function Home() {
               key={service}
               style={{
   backgroundColor: "white",
-  padding: "14px 18px",
+  padding: "10px 18px",
   borderRadius: "16px",
   border: "1px solid #E5E7EB",
   boxShadow: "0 4px 12px rgba(0,0,0,0.06)",
