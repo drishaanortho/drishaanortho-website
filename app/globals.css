@@ -1,20 +1,16 @@
-* {
+body {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  font-family: Arial, sans-serif;
 }
 
-body {
-  font-family: Arial, sans-serif;
-  background: #f8fafc;
-  color: #222;
-  line-height: 1.6;
+button {
+  padding: 10px 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
 }
 
 a {
   text-decoration: none;
-}
-
-button {
-  cursor: pointer;
 }
