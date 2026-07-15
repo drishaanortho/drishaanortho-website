@@ -102,8 +102,12 @@ export default function Home() {
         </p>
 
         <p style={{ fontSize: "20px" }}>
-          Assistant Professor, JLN Medical College, Ajmer
-        </p>
+  Assistant Professor, JLN Medical College, Ajmer
+</p>
+
+<p style={{ fontSize: "18px", color: "#555" }}>
+  OPD Timing: 3:00 PM - 8:00 PM | Monday - Sunday
+</p>
 
         <p
           style={{
