@@ -221,7 +221,7 @@ export default function Home() {
           style={{
             textAlign: "center",
             color: "#0B3C5D",
-            fontSize: "42px",
+            fontSize: "36px",
             marginBottom: "40px",
           }}
         >
