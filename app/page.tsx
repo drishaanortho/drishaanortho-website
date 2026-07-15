@@ -62,16 +62,18 @@ export default function Home() {
         }}
       >
         <img
-          src="/dr-ishaan.jpg"
-          alt="Dr Ishaan Meena"
-          style={{
-            width: "100%",
-            maxWidth: "320px",
-            borderRadius: "20px",
-            boxShadow: "0 10px 30px rgba(0,0,0,0.2)",
-            marginBottom: "15px",
-          }}
-        />
+  src="/dr-ishaan.jpg"
+  alt="Dr Ishaan Meena"
+  style={{
+    width: "280px",
+    height: "280px",
+    objectFit: "cover",
+    borderRadius: "50%",
+    boxShadow: "0 10px 30px rgba(0,0,0,0.2)",
+    margin: "0 auto 20px auto",
+    display: "block"
+  }}
+/>
 
         <h1
           style={{
