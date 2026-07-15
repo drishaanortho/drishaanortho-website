@@ -35,105 +35,146 @@ export default function Home() {
         <a href="#services">Services</a>
         <a href="#contact">Contact</a>
       </nav>
+{/* HERO SECTION */}
+<section
+  id="home"
+  style={{
+    maxWidth: "1200px",
+    margin: "0 auto",
+    padding: "30px 20px 50px",
+    display: "flex",
+    flexDirection: "column",
+    alignItems: "center",
+    textAlign: "center",
+  }}
+>
+  <img
+    src="/dr-ishaan.jpg"
+    alt="Dr Ishaan Meena"
+    style={{
+      width: "100%",
+      maxWidth: "320px",
+      borderRadius: "20px",
+      boxShadow: "0 10px 30px rgba(0,0,0,0.2)",
+      marginBottom: "30px",
+    }}
+  />
 
-      {/* HERO SECTION */}
-      <section
-        id="home"
+  <h1
+    style={{
+      fontSize: "52px",
+      color: "#0B3C5D",
+      marginBottom: "10px",
+      marginTop: "0",
+    }}
+  >
+    Dr. Ishaan Meena
+  </h1>
+
+  <h2
+    style={{
+      color: "#333",
+      fontSize: "32px",
+      marginTop: "0",
+      marginBottom: "20px",
+    }}
+  >
+    Orthopaedic & Shoulder Surgeon
+  </h2>
+
+  <p
+    style={{
+      fontSize: "22px",
+      maxWidth: "800px",
+      marginBottom: "10px",
+    }}
+  >
+    <strong>MS (Orthopaedics)</strong> | Fellowship in Advanced Shoulder Surgery
+  </p>
+
+  <p
+    style={{
+      fontSize: "20px",
+      marginBottom: "10px",
+    }}
+  >
+    Assistant Professor, JLN Medical College, Ajmer
+  </p>
+
+  <p
+    style={{
+      fontSize: "18px",
+      color: "#555",
+      maxWidth: "750px",
+      lineHeight: "30px",
+      marginBottom: "30px",
+    }}
+  >
+    Dedicated to evidence-based, compassionate and advanced orthopaedic care with expertise in trauma, shoulder surgery, arthroscopy and sports injuries.
+  </p>
+
+  <div
+    style={{
+      display: "flex",
+      gap: "15px",
+      flexWrap: "wrap",
+      justifyContent: "center",
+    }}
+  >
+    <a href="/appointment">
+      <button
         style={{
-          maxWidth: "1200px",
-          margin: "10px auto",
-padding: "10px 20px",
-          display: "flex",
-          gap: "40px",
-          alignItems: "center",
-          flexWrap: "wrap",
+          backgroundColor: "#0B3C5D",
+          color: "white",
+          padding: "14px 28px",
+          borderRadius: "10px",
+          border: "none",
+          fontSize: "16px",
+          cursor: "pointer",
         }}
       >
-        
+        Book Appointment
+      </button>
+    </a>
 
-        <div style={{ flex: 1 }}>
-          <h1
-            style={{
-              fontSize: "48px",
-              color: "#0B3C5D",
-              marginBottom: "10px",
-            }}
-          >
-            Dr. Ishaan Meena
-          </h1>
+    <a href="tel:+917023562036">
+      <button
+        style={{
+          backgroundColor: "#1E88E5",
+          color: "white",
+          padding: "14px 28px",
+          borderRadius: "10px",
+          border: "none",
+          fontSize: "16px",
+          cursor: "pointer",
+        }}
+      >
+        Call Now
+      </button>
+    </a>
 
-          <h2 style={{ color: "#333" }}>
-            Orthopaedic & Shoulder Surgeon
-          </h2>
+    <a
+      href="https://wa.me/917023562036"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <button
+        style={{
+          backgroundColor: "#25D366",
+          color: "white",
+          padding: "14px 28px",
+          borderRadius: "10px",
+          border: "none",
+          fontSize: "16px",
+          cursor: "pointer",
+        }}
+      >
+        WhatsApp
+      </button>
+    </a>
+  </div>
+</section>
 
-          <p style={{ fontSize: "20px" }}>
-            <strong>MS (Orthopaedics)</strong> | Fellowship in Advanced
-            Shoulder Surgery
-          </p>
-
-          <p style={{ fontSize: "18px" }}>
-            Assistant Professor, JLN Medical College, Ajmer
-          </p>
-
-          <p style={{ fontSize: "18px" }}>
-            Dedicated to evidence-based and compassionate orthopaedic care.
-          </p>
-
-          <div
-            style={{
-              display: "flex",
-              gap: "15px",
-              flexWrap: "wrap",
-              marginTop: "25px",
-            }}
-          >
-            <a href="/appointment">
-              <button
-                style={{
-                  backgroundColor: "#0B3C5D",
-                  color: "white",
-                  padding: "12px 24px",
-                  borderRadius: "10px",
-                  border: "none",
-                }}
-              >
-                Book Appointment
-              </button>
-            </a>
-
-            <a href="tel:+917023562036">
-              <button
-                style={{
-                  backgroundColor: "#1E88E5",
-                  color: "white",
-                  padding: "12px 24px",
-                  borderRadius: "10px",
-                  border: "none",
-                }}
-              >
-                Call Now
-              </button>
-            </a>
-
-            <a
-              href="https://wa.me/917023562036"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <button
-                style={{
-                  backgroundColor: "#25D366",
-                  color: "white",
-                  padding: "12px 24px",
-                  borderRadius: "10px",
-                  border: "none",
-                }}
-              >
-                WhatsApp
-              </button>
-            </a>
-          </div>
-        </div> 
         <img
           src="/dr-ishaan.jpg"
           alt="Dr Ishaan Meena"
