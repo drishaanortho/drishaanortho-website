@@ -282,8 +282,13 @@ export default function Home() {
         </p>
 
         <p style={{ fontSize: "20px" }}>
-          ✉️ drishaanortho@gmail.com
-        </p>
+  ✉️ <a
+    href="mailto:dr.ishaanmeena@gmail.com"
+    style={{ color: "white" }}
+  >
+    dr.ishaanmeena@gmail.com
+  </a>
+</p>
       </section>
 
       {/* FOOTER */}
