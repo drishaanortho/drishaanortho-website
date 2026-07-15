@@ -36,32 +36,6 @@ export default function Home() {
     >
       {/* NAVBAR */}
 
-      <nav
-        style={{
-          backgroundColor: "#0B3C5D",
-          color: "white",
-          padding: "20px 30px",
-          display: "flex",
-          justifyContent: "space-between",
-          alignItems: "center",
-          flexWrap: "wrap",
-        }}
-      >
-        <h2 style={{ margin: 0 }}>Dr. Ishaan Meena</h2>
-
-        <div
-          style={{
-            display: "flex",
-            gap: "20px",
-            flexWrap: "wrap",
-          }}
-        >
-          <a href="#about" style={{ color: "white" }}>About</a>
-          <a href="#services" style={{ color: "white" }}>Services</a>
-          <a href="#contact" style={{ color: "white" }}>Contact</a>
-        </div>
-      </nav>
-
       {/* HERO SECTION */}
 
       <section
