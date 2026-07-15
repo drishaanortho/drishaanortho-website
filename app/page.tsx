@@ -12,6 +12,22 @@ export default function Home() {
 
   return (
     <main
+      <nav
+  style={{
+    position: "sticky",
+    top: 0,
+    backgroundColor: "white",
+    padding: "15px",
+    display: "flex",
+    justifyContent: "space-around",
+    zIndex: 1000,
+  }}
+>
+  <a href="#home">Home</a>
+  <a href="#about">About</a>
+  <a href="#services">Services</a>
+  <a href="#contact">Contact</a>
+</nav>
       style={{
         fontFamily: "Arial, sans-serif",
         backgroundColor: "#f4f8fc",
@@ -281,22 +297,3 @@ export default function Home() {
         </p>
       </footer>
     </main>
-    <nav
-  style={{
-    position: "sticky",
-    top: 0,
-    backgroundColor: "#ffffff",
-    padding: "20px",
-    display: "flex",
-    justifyContent: "space-around",
-    boxShadow: "0 2px 10px rgba(0,0,0,0.1)",
-    zIndex: 1000,
-  }}
->
-  <a href="#home">Home</a>
-  <a href="#about">About</a>
-  <a href="#services">Services</a>
-  <a href="#contact">Contact</a>
-</nav>
-  );
-}
