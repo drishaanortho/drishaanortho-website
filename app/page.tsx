@@ -242,10 +242,10 @@ export default function Home() {
               key={service}
               style={{
   backgroundColor: "white",
-  padding: "18px",
-  borderRadius: "20px",
+  padding: "14px 18px",
+  borderRadius: "16px",
   border: "1px solid #E5E7EB",
-  boxShadow: "0 8px 20px rgba(0,0,0,0.08)",
+  boxShadow: "0 4px 12px rgba(0,0,0,0.06)",
 }}
             >
               <h3
