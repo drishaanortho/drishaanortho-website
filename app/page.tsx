@@ -1,66 +1,285 @@
 export default function Home() {
+  const services = [
+    "Trauma & Fracture Care",
+    "Shoulder Surgery",
+    "Arthroscopy",
+    "Sports Injury Treatment",
+    "Joint Replacement",
+    "Spine Disorders",
+    "CTEV & Deformity Correction",
+    "Nonunion & Malunion Treatment"
+  ];
+
   return (
-    <main style={{fontFamily:"Arial, sans-serif",padding:"40px",maxWidth:"1100px",margin:"0 auto"}}>
-      <section style={{display:"flex",flexWrap:"wrap",gap:"30px",alignItems:"center"}}>
-        <img src="/dr-ishaan.jpg" alt="Dr Ishaan Meena" style={{width:"280px",borderRadius:"16px"}} />
-        <div>
-          <h1>Dr. Ishaan Meena</h1>
-          <h2>Orthopaedic & Shoulder Surgeon</h2>
-          <p><strong>MS (Orthopaedics)</strong> | Fellowship in Advanced Shoulder Surgery</p>
-          <p>Assistant Professor, JLN Medical College, Ajmer</p>
-          <p>📍 Shiv Enclave Apartments, Near Ajmer Hospital & Savitri School, Civil Lines, Ajmer</p>
-          <p>🕒 Clinic Timing: 3:00 PM – 8:00 PM (Every Day)</p>
-          <div style={{display:"flex",gap:"12px",flexWrap:"wrap",marginTop:"16px"}}>
-            <a href="/appointment"><button>Book Appointment</button></a>
-            <a href="tel:+917023562036"><button>Call Now</button></a>
-            <a href="https://wa.me/917023562036"><button>WhatsApp</button></a>
+    <main
+      style={{
+        fontFamily: "Arial, sans-serif",
+        backgroundColor: "#f4f8fc",
+        minHeight: "100vh",
+      }}
+    >
+      {/* NAVBAR */}
+
+      <nav
+        style={{
+          backgroundColor: "#0B3C5D",
+          color: "white",
+          padding: "20px 30px",
+          display: "flex",
+          justifyContent: "space-between",
+          alignItems: "center",
+          flexWrap: "wrap",
+        }}
+      >
+        <h2 style={{ margin: 0 }}>Dr. Ishaan Meena</h2>
+
+        <div
+          style={{
+            display: "flex",
+            gap: "20px",
+            flexWrap: "wrap",
+          }}
+        >
+          <a href="#about" style={{ color: "white" }}>About</a>
+          <a href="#services" style={{ color: "white" }}>Services</a>
+          <a href="#contact" style={{ color: "white" }}>Contact</a>
+        </div>
+      </nav>
+
+      {/* HERO SECTION */}
+
+      <section
+        style={{
+          maxWidth: "1200px",
+          margin: "50px auto",
+          padding: "20px",
+          display: "flex",
+          gap: "40px",
+          alignItems: "center",
+          flexWrap: "wrap",
+        }}
+      >
+        <img
+          src="/dr-ishaan.jpg"
+          alt="Dr Ishaan Meena"
+          style={{
+            width: "320px",
+            borderRadius: "20px",
+            boxShadow: "0 10px 30px rgba(0,0,0,0.2)",
+          }}
+        />
+
+        <div style={{ flex: 1 }}>
+          <h1
+            style={{
+              fontSize: "55px",
+              color: "#0B3C5D",
+              marginBottom: "10px",
+            }}
+          >
+            Dr. Ishaan Meena
+          </h1>
+
+          <h2 style={{ color: "#333" }}>
+            Orthopaedic & Shoulder Surgeon
+          </h2>
+
+          <p style={{ fontSize: "20px" }}>
+            <strong>MS (Orthopaedics)</strong> |
+            Fellowship in Advanced Shoulder Surgery
+          </p>
+
+          <p style={{ fontSize: "18px" }}>
+            Assistant Professor, JLN Medical College, Ajmer
+          </p>
+
+          <p style={{ fontSize: "18px" }}>
+            Dedicated to evidence-based and compassionate orthopaedic care.
+          </p>
+            <div
+            style={{
+              display: "flex",
+              gap: "15px",
+              flexWrap: "wrap",
+              marginTop: "25px",
+            }}
+          >
+            <a href="/appointment">
+              <button
+                style={{
+                  backgroundColor: "#0B3C5D",
+                  color: "white",
+                  padding: "12px 24px",
+                  borderRadius: "10px",
+                  border: "none",
+                }}
+              >
+                Book Appointment
+              </button>
+            </a>
+
+            <a href="tel:+917023562036">
+              <button
+                style={{
+                  backgroundColor: "#1E88E5",
+                  color: "white",
+                  padding: "12px 24px",
+                  borderRadius: "10px",
+                  border: "none",
+                }}
+              >
+                Call Now
+              </button>
+            </a>
+
+            <a href="https://wa.me/917023562036">
+              <button
+                style={{
+                  backgroundColor: "#25D366",
+                  color: "white",
+                  padding: "12px 24px",
+                  borderRadius: "10px",
+                  border: "none",
+                }}
+              >
+                WhatsApp
+              </button>
+            </a>
           </div>
         </div>
       </section>
-      <hr style={{margin:"40px 0"}} />
-      <section><h2>About Dr. Ishaan Meena</h2><p>Dr. Ishaan Meena is an Orthopaedic Surgeon with expertise in trauma, fracture management, shoulder surgery, arthroscopy, sports injuries, joint replacement and spine disorders.</p></section>
-      <section style={{marginTop:"40px"}}><h2>Our Services</h2><ul><li>Trauma & Fracture Care</li><li>Shoulder Surgery</li><li>Arthroscopy</li><li>Sports Injury Treatment</li><li>Joint Replacement</li><li>Spine Disorders</li><li>CTEV & Pediatric Orthopaedics</li><li>Arthritis, Malunion & Nonunion</li></ul></section>
-      <section style={{marginTop:"40px"}}><h2>Contact</h2><p>📞 +91 7023562036</p><p>📧 dr.ishaanmeena@gmail.com</p><p><a href="https://maps.app.goo.gl/aPpDrVNk3fE9bckU6">View Clinic on Google Maps</a></p></section>
-   <section style={{ marginTop: "50px", textAlign: "center" }}>
-  <h2>Contact</h2>
 
-  <p><strong>Dr. Ishaan Meena Orthopaedic Clinic</strong></p>
+      {/* ABOUT SECTION */}
 
-  <p>
-    Shiv Enclave Apartments,<br />
-    Near Ajmer Hospital & Savitri School,<br />
-    Civil Lines, Ajmer, Rajasthan
-  </p>
+      <section
+        id="about"
+        style={{
+          maxWidth: "1100px",
+          margin: "auto",
+          padding: "50px 20px",
+        }}
+      >
+        <h2
+          style={{
+            color: "#0B3C5D",
+            fontSize: "40px",
+          }}
+        >
+          About Dr. Ishaan Meena
+        </h2>
 
-  <p>📞 +91 7023562036</p>
-  <p>📧 dr.ishaanmeena@gmail.com</p>
-  <p>🕒 Clinic Timing: 3:00 PM – 8:00 PM (Everyday)</p>
+        <p
+          style={{
+            fontSize: "20px",
+            lineHeight: "35px",
+            color: "#444",
+          }}
+        >
+          Dr. Ishaan Meena is an Orthopaedic Surgeon with expertise in
+          trauma surgery, fracture management, shoulder surgery,
+          arthroscopy, sports injuries, joint replacement and spine
+          disorders.
+        </p>
+      </section>
 
-  <a
-    href="https://maps.app.goo.gl/aPpDrVNk3fE9bckU6"
-    target="_blank"
-  >
-    <button>📍 Open in Google Maps</button>
-  </a>
-</section>
+      {/* SERVICES SECTION */}
 
-<a
-  href="https://wa.me/917023562036"
-  target="_blank"
-  style={{
-    position: "fixed",
-    bottom: "20px",
-    right: "20px",
-    background: "#25D366",
-    color: "white",
-    padding: "15px",
-    borderRadius: "50%",
-    textDecoration: "none",
-    fontSize: "24px",
-    boxShadow: "0 4px 10px rgba(0,0,0,0.3)"
-  }}
->
-  💬
-</a> </main>
+      <section
+        id="services"
+        style={{
+          backgroundColor: "white",
+          padding: "60px 20px",
+        }}
+      >
+        <h2
+          style={{
+            textAlign: "center",
+            color: "#0B3C5D",
+            fontSize: "40px",
+          }}
+        >
+          Our Services
+        </h2>
+
+        <div
+          style={{
+            display: "grid",
+            gridTemplateColumns:
+              "repeat(auto-fit,minmax(250px,1fr))",
+            gap: "20px",
+            maxWidth: "1100px",
+            margin: "40px auto",
+          }}
+        >
+          {services.map((service) => (
+            <div
+              key={service}
+              style={{
+                backgroundColor: "#eef4ff",
+                padding: "25px",
+                borderRadius: "15px",
+                boxShadow: "0 4px 12px rgba(0,0,0,0.1)",
+              }}
+            >
+              <h3 style={{ color: "#0B3C5D" }}>
+                {service}
+              </h3>
+            </div>
+          ))}
+        </div>
+      </section>       {/* CONTACT SECTION */}
+
+      <section
+        id="contact"
+        style={{
+          backgroundColor: "#0B3C5D",
+          color: "white",
+          padding: "60px 20px",
+          textAlign: "center",
+        }}
+      >
+        <h2
+          style={{
+            fontSize: "40px",
+            marginBottom: "20px",
+          }}
+        >
+          Contact
+        </h2>
+
+        <p style={{ fontSize: "20px" }}>
+          📍 Shiv Enclave Apartments, Near Ajmer Hospital &
+          Savitri School, Civil Lines, Ajmer
+        </p>
+
+        <p style={{ fontSize: "20px" }}>
+          📞 +91 70235 62036
+        </p>
+
+        <p style={{ fontSize: "20px" }}>
+          🕒 3:00 PM – 8:00 PM (Every Day)
+        </p>
+
+        <p style={{ fontSize: "20px" }}>
+          ✉️ drishaanortho@gmail.com
+        </p>
+      </section>
+
+      {/* FOOTER */}
+
+      <footer
+        style={{
+          backgroundColor: "#06263B",
+          color: "white",
+          textAlign: "center",
+          padding: "20px",
+        }}
+      >
+        <p>
+          © {new Date().getFullYear()} Dr. Ishaan Meena |
+          Orthopaedic & Shoulder Surgeon
+        </p>
+      </footer>
+    </main>
   );
 }
