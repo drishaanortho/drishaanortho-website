@@ -7,39 +7,38 @@ export default function Home() {
     "Joint Replacement",
     "Spine Disorders",
     "CTEV & Deformity Correction",
-    "Nonunion & Malunion Treatment"
+    "Nonunion & Malunion Treatment",
   ];
 
   return (
-  <main
-    style={{
-      fontFamily: "Arial, sans-serif",
-      backgroundColor: "#f4f8fc",
-      minHeight: "100vh",
-    }}
-  >
-
-    <nav
+    <main
       style={{
-        position: "sticky",
-        top: 0,
-        backgroundColor: "white",
-        padding: "15px",
-        display: "flex",
-        justifyContent: "space-around",
-        zIndex: 1000,
+        fontFamily: "Arial, sans-serif",
+        backgroundColor: "#f4f8fc",
+        minHeight: "100vh",
       }}
     >
-  <a href="#home">Home</a>
-  <a href="#about">About</a>
-  <a href="#services">Services</a>
-  <a href="#contact">Contact</a>
-</nav>
       {/* NAVBAR */}
+      <nav
+        style={{
+          position: "sticky",
+          top: 0,
+          backgroundColor: "white",
+          padding: "15px",
+          display: "flex",
+          justifyContent: "space-around",
+          zIndex: 1000,
+        }}
+      >
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+      </nav>
 
       {/* HERO SECTION */}
-
       <section
+        id="home"
         style={{
           maxWidth: "1200px",
           margin: "50px auto",
@@ -76,8 +75,8 @@ export default function Home() {
           </h2>
 
           <p style={{ fontSize: "20px" }}>
-            <strong>MS (Orthopaedics)</strong> |
-            Fellowship in Advanced Shoulder Surgery
+            <strong>MS (Orthopaedics)</strong> | Fellowship in Advanced
+            Shoulder Surgery
           </p>
 
           <p style={{ fontSize: "18px" }}>
@@ -87,7 +86,8 @@ export default function Home() {
           <p style={{ fontSize: "18px" }}>
             Dedicated to evidence-based and compassionate orthopaedic care.
           </p>
-            <div
+
+          <div
             style={{
               display: "flex",
               gap: "15px",
@@ -123,7 +123,11 @@ export default function Home() {
               </button>
             </a>
 
-            <a href="https://wa.me/917023562036">
+            <a
+              href="https://wa.me/917023562036"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <button
                 style={{
                   backgroundColor: "#25D366",
@@ -141,7 +145,6 @@ export default function Home() {
       </section>
 
       {/* ABOUT SECTION */}
-
       <section
         id="about"
         style={{
@@ -166,15 +169,13 @@ export default function Home() {
             color: "#444",
           }}
         >
-          Dr. Ishaan Meena is an Orthopaedic Surgeon with expertise in
-          trauma surgery, fracture management, shoulder surgery,
-          arthroscopy, sports injuries, joint replacement and spine
-          disorders.
+          Dr. Ishaan Meena is an Orthopaedic Surgeon with expertise in trauma
+          surgery, fracture management, shoulder surgery, arthroscopy, sports
+          injuries, joint replacement and spine disorders.
         </p>
       </section>
 
       {/* SERVICES SECTION */}
-
       <section
         id="services"
         style={{
@@ -195,8 +196,7 @@ export default function Home() {
         <div
           style={{
             display: "grid",
-            gridTemplateColumns:
-              "repeat(auto-fit,minmax(250px,1fr))",
+            gridTemplateColumns: "repeat(auto-fit,minmax(250px,1fr))",
             gap: "20px",
             maxWidth: "1100px",
             margin: "40px auto",
@@ -212,14 +212,13 @@ export default function Home() {
                 boxShadow: "0 4px 12px rgba(0,0,0,0.1)",
               }}
             >
-              <h3 style={{ color: "#0B3C5D" }}>
-                {service}
-              </h3>
+              <h3 style={{ color: "#0B3C5D" }}>{service}</h3>
             </div>
           ))}
         </div>
-      </section>       {/* CONTACT SECTION */}
+      </section>
 
+      {/* CONTACT SECTION */}
       <section
         id="contact"
         style={{
@@ -239,13 +238,11 @@ export default function Home() {
         </h2>
 
         <p style={{ fontSize: "20px" }}>
-          📍 Shiv Enclave Apartments, Near Ajmer Hospital &
-          Savitri School, Civil Lines, Ajmer
+          📍 Shiv Enclave Apartments, Near Ajmer Hospital & Savitri School,
+          Civil Lines, Ajmer
         </p>
 
-        <p style={{ fontSize: "20px" }}>
-          📞 +91 70235 62036
-        </p>
+        <p style={{ fontSize: "20px" }}>📞 +91 70235 62036</p>
 
         <p style={{ fontSize: "20px" }}>
           🕒 3:00 PM – 8:00 PM (Every Day)
@@ -257,7 +254,6 @@ export default function Home() {
       </section>
 
       {/* FOOTER */}
-
       <footer
         style={{
           backgroundColor: "#06263B",
@@ -267,8 +263,10 @@ export default function Home() {
         }}
       >
         <p>
-          © {new Date().getFullYear()} Dr. Ishaan Meena |
-          Orthopaedic & Shoulder Surgeon
+          © {new Date().getFullYear()} Dr. Ishaan Meena | Orthopaedic &
+          Shoulder Surgeon
         </p>
       </footer>
     </main>
+  );
+}
