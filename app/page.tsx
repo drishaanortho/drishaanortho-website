@@ -49,15 +49,7 @@ export default function Home() {
           flexWrap: "wrap",
         }}
       >
-        <img
-          src="/dr-ishaan.jpg"
-          alt="Dr Ishaan Meena"
-          style={{
-            width: "320px",
-            borderRadius: "20px",
-            boxShadow: "0 10px 30px rgba(0,0,0,0.2)",
-          }}
-        />
+        
 
         <div style={{ flex: 1 }}>
           <h1
@@ -141,7 +133,16 @@ export default function Home() {
               </button>
             </a>
           </div>
-        </div>
+        </div> 
+        <img
+          src="/dr-ishaan.jpg"
+          alt="Dr Ishaan Meena"
+          style={{
+            width: "320px",
+            borderRadius: "20px",
+            boxShadow: "0 10px 30px rgba(0,0,0,0.2)",
+          }}
+        />
       </section>
 
       {/* ABOUT SECTION */}
