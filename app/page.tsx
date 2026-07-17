@@ -63,7 +63,7 @@ export default function Home() {
         style={{
           maxWidth: "1200px",
           margin: "0 auto",
-          padding: "30px 20px 50px",
+          padding: "30px 20px 30px",
           textAlign: "center",
         }}
       >
@@ -71,8 +71,8 @@ export default function Home() {
           src="/dr-ishaan.jpg"
           alt="Dr Ishaan Meena"
           style={{
-            width: "280px",
-            height: "280px",
+            width: "240px",
+            height: "240px",
             objectFit: "cover",
             borderRadius: "50%",
             boxShadow: "0 10px 30px rgba(0,0,0,0.2)",
@@ -80,8 +80,7 @@ export default function Home() {
             display: "block",
           }}
         />
-
-        <h1 style={{ fontSize: "42px", color: "#0B3C5D", marginBottom: "10px" }}>
+ <h1 style={{ fontSize: "42px", color: "#0B3C5D", marginBottom: "10px" }}>
           Dr. Ishaan Meena
         </h1>
 
@@ -92,12 +91,11 @@ export default function Home() {
         <p style={{ fontSize: "22px" }}>
           <strong>MS (Orthopaedics)</strong> | Fellowship in Advanced Shoulder Surgery
         </p>
-
-        <p style={{ fontSize: "20px" }}>
+<p style={{ fontSize: "20px" }}>
           Assistant Professor, JLN Medical College, Ajmer
         </p>
 
-        <p style={{ fontSize: "18px", color: "#555" }}>
+  <p style={{ fontSize: "18px", color: "#555" }}>
           OPD Timing: 3:00 PM - 8:00 PM | Monday - Sunday
         </p>
 
