@@ -150,7 +150,7 @@ export default function Home() {
       </section>
 
       <section id="about" style={{ maxWidth: "1000px", margin: "auto", padding: "30px 20px" }}>
-        <h2 style={{ color: "#0B3C5D", fontSize: "42px", marginBottom: "25px" }}>
+        <h2 style={{ color: "#0B3C5D", fontSize: "34px", marginBottom: "25px" }}>
           About Dr. Ishaan Meena
         </h2>
 
@@ -174,7 +174,7 @@ export default function Home() {
   <h2
     style={{
       color: "#0B3C5D",
-      fontSize: "36px",
+      fontSize: "30px",
       marginBottom: "40px",
     }}
   >
@@ -248,7 +248,7 @@ export default function Home() {
   <h2
     style={{
       color: "#0B3C5D",
-      fontSize: "42px",
+      fontSize: "34px",
       marginBottom: "40px",
     }}
   >
@@ -322,7 +322,7 @@ export default function Home() {
   </div>
 </section>
       <section id="services" style={{ backgroundColor: "white", padding: "60px 20px" }}>
-        <h2 style={{ textAlign: "center", color: "#0B3C5D", fontSize: "36px", marginBottom: "40px" }}>
+        <h2 style={{ textAlign: "center", color: "#0B3C5D", fontSize: "32px", marginBottom: "40px" }}>
           Our Services
         </h2>
 
