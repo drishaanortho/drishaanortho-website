@@ -82,19 +82,6 @@ transition: "0.3s",
       </nav>
 <Hero />
 
-    <section id="about" style={{ maxWidth: "1000px", margin: "auto", padding: "30px 20px" }}>
-        <h2 style={{ color: "#0B3C5D", fontSize: "34px", marginBottom: "25px" }}>
-          About Dr. Ishaan Meena
-        </h2>
-
-        <p style={{ fontSize: "20px", lineHeight: "36px", color: "#444" }}>
-          Dr. Ishaan Meena is an Orthopaedic and Shoulder Surgeon specializing in
-          trauma care, shoulder surgery, arthroscopy, sports injuries, joint
-          replacement, spine disorders, deformity correction, and complex fracture
-          management.
-        </p>
-      </section>
-
         {/* WHY CHOOSE US */}
 <section
   style={{
