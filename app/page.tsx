@@ -22,38 +22,61 @@ export default function Home() {
       <nav
         style={{
           position: "sticky",
-          top: 0,
-          backgroundColor: "white",
-          padding: "15px",
-          display: "flex",
-          justifyContent: "space-around",
-          zIndex: 1000,
-          boxShadow: "0 2px 10px rgba(0,0,0,0.08)",
+top: "15px",
+margin: "0 auto",
+width: "95%",
+maxWidth: "1200px",
+background: "rgba(255,255,255,0.75)",
+backdropFilter: "blur(18px)",
+borderRadius: "18px",
+padding: "16px 24px",
+display: "flex",
+justifyContent: "space-around",
+alignItems: "center",
+zIndex: 1000,
+boxShadow: "0 10px 30px rgba(11,60,93,0.15)",
+border: "1px solid rgba(255,255,255,0.4)",
         }}
       >
         <a href="#home" style={{
   textDecoration: "none",
   color: "#0B3C5D",
-  fontSize: "18px",
-  fontWeight: "600",
+fontSize: "17px",
+fontWeight: "700",
+letterSpacing: "0.3px",
+padding: "10px 16px",
+borderRadius: "12px",
+transition: "0.3s",
 }}>Home</a>
         <a href="#about" style={{
   textDecoration: "none",
   color: "#0B3C5D",
-  fontSize: "18px",
-  fontWeight: "600",
+fontSize: "17px",
+fontWeight: "700",
+letterSpacing: "0.3px",
+padding: "10px 16px",
+borderRadius: "12px",
+transition: "0.3s",
 }}>About</a>
         <a href="#services" style={{
   textDecoration: "none",
   color: "#0B3C5D",
-  fontSize: "18px",
-  fontWeight: "600",
+fontSize: "17px",
+fontWeight: "700",
+letterSpacing: "0.3px",
+padding: "10px 16px",
+borderRadius: "12px",
+transition: "0.3s",
 }}>Services</a>
         <a href="#contact" style={{
   textDecoration: "none",
   color: "#0B3C5D",
-  fontSize: "18px",
-  fontWeight: "600",
+fontSize: "17px",
+fontWeight: "700",
+letterSpacing: "0.3px",
+padding: "10px 16px",
+borderRadius: "12px",
+transition: "0.3s",
 }}>Contact</a>
       </nav>
 
@@ -61,51 +84,100 @@ export default function Home() {
       <section
         id="home"
         style={{
-          maxWidth: "1200px",
-          margin: "0 auto",
-          padding: "30px 20px 30px",
-          textAlign: "center",
-        }}
+maxWidth: "1250px",
+margin: "30px auto",
+padding: "70px 30px 90px",
+textAlign: "center",
+background: "linear-gradient(135deg,#0B3C5D 0%,#1E88E5 100%)",
+borderRadius: "30px",
+boxShadow: "0 20px 60px rgba(11,60,93,0.25)",
+color: "#ffffff",
+}}
       >
         <img
           src="/dr-ishaan.jpg"
           alt="Dr Ishaan Meena"
           style={{
-            width: "240px",
-            height: "240px",
-            objectFit: "cover",
-            borderRadius: "50%",
-            boxShadow: "0 10px 30px rgba(0,0,0,0.2)",
-            margin: "0 auto 20px auto",
-            display: "block",
-          }}
+  width: "260px",
+  height: "260px",
+  objectFit: "cover",
+  borderRadius: "50%",
+  border: "8px solid rgba(255,255,255,0.95)",
+  boxShadow: "0 30px 70px rgba(11,60,93,0.35)",
+  margin: "0 auto 30px auto",
+  display: "block",
+}}
         />
- <h1 style={{ fontSize: "42px", color: "#0B3C5D", marginBottom: "10px" }}>
+ <h1
+  style={{
+    fontSize: "56px",
+    color: "#ffffff",
+    fontWeight: "800",
+    letterSpacing: "-1px",
+    marginBottom: "12px",
+    textShadow: "0 2px 8px rgba(11,60,93,0.15)",
+  }}
+>
           Dr. Ishaan Meena
         </h1>
 
-        <h2 style={{ color: "#333", fontSize: "24px", marginTop: "10px", marginBottom: "20px" }}>
+        <h2
+  style={{
+    color: "#EAF4FF",
+    fontSize: "30px",
+    fontWeight: "700",
+    letterSpacing: "0.5px",
+    marginTop: "15px",
+    marginBottom: "25px",
+  }}
+>
           Orthopaedic & Shoulder Surgeon
         </h2>
 
-        <p style={{ fontSize: "22px" }}>
+        <p
+  style={{
+    fontSize: "24px",
+    fontWeight: "600",
+    color: "#ffffff",
+    marginBottom: "15px",
+  }}
+>
           <strong>MS (Orthopaedics)</strong> | Fellowship in Advanced Shoulder Surgery
         </p>
-<p style={{ fontSize: "20px" }}>
-          Assistant Professor, JLN Medical College, Ajmer
-        </p>
+<p
+  style={{
+    fontSize: "21px",
+    color: "#D8EAF8",
+    fontWeight: "500",
+    marginBottom: "18px",
+  }}
+>
+  Assistant Professor, JLN Medical College, Ajmer
+</p>
 
-  <p style={{ fontSize: "18px", color: "#555" }}>
+  <p
+  style={{
+    display: "inline-block",
+    backgroundColor: "#ffffff",
+    color: "#0B3C5D",
+    padding: "10px 22px",
+    borderRadius: "30px",
+    fontSize: "18px",
+    fontWeight: "600",
+    boxShadow: "0 4px 15px rgba(0,0,0,0.08)",
+    marginBottom: "25px",
+  }}
+>
           OPD Timing: 3:00 PM - 8:00 PM | Monday - Sunday
         </p>
 
         <p
           style={{
-            fontSize: "18px",
-            color: "#555",
-            maxWidth: "750px",
-            margin: "20px auto",
-            lineHeight: "30px",
+            fontSize: "19px",
+            color: "#EAF4FF",
+            maxWidth: "820px",
+            margin: "25px auto",
+            lineHeight: "36px",
           }}
         >
           Dedicated to evidence-based, compassionate and advanced orthopaedic care
@@ -114,33 +186,63 @@ export default function Home() {
         </p>
 
         <div
-          style={{
-            display: "flex",
-            gap: "15px",
-            flexWrap: "wrap",
-            justifyContent: "center",
-            marginTop: "25px",
-            marginBottom: "50px",
-          }}
-        >
+style={{
+display: "flex",
+gap: "20px",
+flexWrap: "wrap",
+justifyContent: "center",
+marginTop: "35px",
+marginBottom: "60px",
+}}
+>
           <a
             href="https://wa.me/917023562036?text=Hello%20Dr.%20Ishaan%20Meena,%20I%20would%20like%20to%20book%20an%20appointment."
             target="_blank"
             rel="noopener noreferrer"
           >
-            <button style={{ backgroundColor: "#0B3C5D", color: "white", padding: "14px 28px", borderRadius: "10px", border: "none", cursor: "pointer" }}>
+            <button style={{
+  backgroundColor: "#0B3C5D",
+  color: "white",
+  padding: "18px 40px",
+  borderRadius: "999px",
+  border: "none",
+  fontSize: "19px",
+  fontWeight: "700",
+  cursor: "pointer",
+  boxShadow: "0 10px 25px rgba(11,60,93,0.30)",
+}}>
               Book Appointment
             </button>
           </a>
 
           <a href="tel:+917023562036">
-            <button style={{ backgroundColor: "#1E88E5", color: "white", padding: "14px 28px", borderRadius: "10px", border: "none", cursor: "pointer" }}>
+            <button style={{
+  backgroundColor: "#1E88E5",
+  color: "white",
+  padding: "18px 40px",
+  borderRadius: "999px",
+  border: "none",
+  fontSize: "19px",
+  fontWeight: "700",
+  cursor: "pointer",
+  boxShadow: "0 10px 25px rgba(30,136,229,0.30)",
+}}>
               Call Now
             </button>
           </a>
 
           <a href="https://wa.me/917023562036" target="_blank" rel="noopener noreferrer">
-            <button style={{ backgroundColor: "#25D366", color: "white", padding: "14px 28px", borderRadius: "10px", border: "none", cursor: "pointer" }}>
+            <button style={{
+  backgroundColor: "#25D366",
+  color: "white",
+  padding: "18px 40px",
+  borderRadius: "999px",
+  border: "none",
+  fontSize: "19px",
+  fontWeight: "700",
+  cursor: "pointer",
+  boxShadow: "0 10px 25px rgba(37,211,102,0.30)",
+}}>
               WhatsApp
             </button>
           </a>
