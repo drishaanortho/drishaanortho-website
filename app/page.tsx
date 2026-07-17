@@ -237,6 +237,90 @@ export default function Home() {
     </div>
   </div>
 </section>
+      {/* STATISTICS SECTION */}
+<section
+  style={{
+    backgroundColor: "white",
+    padding: "60px 20px",
+    textAlign: "center",
+  }}
+>
+  <h2
+    style={{
+      color: "#0B3C5D",
+      fontSize: "42px",
+      marginBottom: "40px",
+    }}
+  >
+    Achievements & Experience
+  </h2>
+
+  <div
+    style={{
+      display: "grid",
+      gridTemplateColumns: "repeat(auto-fit,minmax(180px,1fr))",
+      gap: "20px",
+      maxWidth: "1000px",
+      margin: "auto",
+    }}
+  >
+    <div
+      style={{
+        backgroundColor: "#f4f8fc",
+        padding: "30px",
+        borderRadius: "18px",
+        boxShadow: "0 4px 12px rgba(0,0,0,0.06)",
+      }}
+    >
+      <h2 style={{ color: "#0B3C5D", fontSize: "40px", margin: 0 }}>
+        5000+
+      </h2>
+      <p>Patients Treated</p>
+    </div>
+
+    <div
+      style={{
+        backgroundColor: "#f4f8fc",
+        padding: "30px",
+        borderRadius: "18px",
+        boxShadow: "0 4px 12px rgba(0,0,0,0.06)",
+      }}
+    >
+      <h2 style={{ color: "#0B3C5D", fontSize: "40px", margin: 0 }}>
+        1000+
+      </h2>
+      <p>Orthopaedic Procedures</p>
+    </div>
+
+    <div
+      style={{
+        backgroundColor: "#f4f8fc",
+        padding: "30px",
+        borderRadius: "18px",
+        boxShadow: "0 4px 12px rgba(0,0,0,0.06)",
+      }}
+    >
+      <h2 style={{ color: "#0B3C5D", fontSize: "40px", margin: 0 }}>
+        5+
+      </h2>
+      <p>Years of Experience</p>
+    </div>
+
+    <div
+      style={{
+        backgroundColor: "#f4f8fc",
+        padding: "30px",
+        borderRadius: "18px",
+        boxShadow: "0 4px 12px rgba(0,0,0,0.06)",
+      }}
+    >
+      <h2 style={{ color: "#0B3C5D", fontSize: "40px", margin: 0 }}>
+        24×7
+      </h2>
+      <p>Emergency Trauma Care</p>
+    </div>
+  </div>
+</section>
       <section id="services" style={{ backgroundColor: "white", padding: "60px 20px" }}>
         <h2 style={{ textAlign: "center", color: "#0B3C5D", fontSize: "36px", marginBottom: "40px" }}>
           Our Services
