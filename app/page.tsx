@@ -1,4 +1,5 @@
 import Hero from "../components/Hero";
+import About from "../components/About";
 export default function Home() {
   const services = [
     "Trauma & Fracture Care",
@@ -81,7 +82,7 @@ transition: "0.3s",
 }}>Contact</a>
       </nav>
 <Hero />
-
+<About />
         {/* WHY CHOOSE US */}
 <section
   style={{
