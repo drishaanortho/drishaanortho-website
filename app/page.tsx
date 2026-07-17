@@ -31,10 +31,30 @@ export default function Home() {
           boxShadow: "0 2px 10px rgba(0,0,0,0.08)",
         }}
       >
-        <a href="#home" style={{ textDecoration: "none", color: "#0B3C5D" }}>Home</a>
-        <a href="#about" style={{ textDecoration: "none", color: "#0B3C5D" }}>About</a>
-        <a href="#services" style={{ textDecoration: "none", color: "#0B3C5D" }}>Services</a>
-        <a href="#contact" style={{ textDecoration: "none", color: "#0B3C5D" }}>Contact</a>
+        <a href="#home" style={{
+  textDecoration: "none",
+  color: "#0B3C5D",
+  fontSize: "18px",
+  fontWeight: "600",
+}}>Home</a>
+        <a href="#about" style={{
+  textDecoration: "none",
+  color: "#0B3C5D",
+  fontSize: "18px",
+  fontWeight: "600",
+}}>About</a>
+        <a href="#services" style={{
+  textDecoration: "none",
+  color: "#0B3C5D",
+  fontSize: "18px",
+  fontWeight: "600",
+}}>Services</a>
+        <a href="#contact" style={{
+  textDecoration: "none",
+  color: "#0B3C5D",
+  fontSize: "18px",
+  fontWeight: "600",
+}}>Contact</a>
       </nav>
 
       {/* HERO SECTION */}
