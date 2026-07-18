@@ -43,7 +43,20 @@ export default function Hero() {
         >
           Dr. Ishaan Meena
         </h1>
-
+        <div
+  style={{
+    display: "inline-block",
+    background: "rgba(255,255,255,0.15)",
+    padding: "10px 18px",
+    borderRadius: "999px",
+    marginTop: "12px",
+    fontSize: "17px",
+    fontWeight: "600",
+    color: "#FFFFFF",
+  }}
+>
+  🏥 Assistant Professor • JLN Medical College, Ajmer
+</div>
         <div
   style={{
     display: "flex",
@@ -76,20 +89,7 @@ export default function Hero() {
     🦴 Advanced Shoulder Fellowship
   </span>
 </div>
-        <div
-  style={{
-    display: "inline-block",
-    background: "rgba(255,255,255,0.15)",
-    padding: "10px 18px",
-    borderRadius: "999px",
-    marginTop: "12px",
-    fontSize: "17px",
-    fontWeight: "600",
-    color: "#FFFFFF",
-  }}
->
-  🏥 Assistant Professor • JLN Medical College, Ajmer
-</div>
+
         <div
   style={{
     display: "flex",
