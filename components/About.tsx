@@ -30,6 +30,34 @@ fracture treatment. His focus is on providing
 evidence-based, patient-centred care with modern
 surgical techniques and compassionate treatment.
       </p>
+      <div
+  style={{
+    display: "grid",
+    gridTemplateColumns: "repeat(auto-fit, minmax(220px, 1fr))",
+    gap: "18px",
+    marginTop: "35px",
+  }}
+>
+  <div style={{ background: "#fff", padding: "20px", borderRadius: "18px", boxShadow: "0 8px 25px rgba(0,0,0,0.08)", textAlign: "center" }}>
+    🎓<br />
+    <strong>MS (Orthopaedics)</strong>
+  </div>
+
+  <div style={{ background: "#fff", padding: "20px", borderRadius: "18px", boxShadow: "0 8px 25px rgba(0,0,0,0.08)", textAlign: "center" }}>
+    🦴<br />
+    <strong>Advanced Shoulder Fellowship</strong>
+  </div>
+
+  <div style={{ background: "#fff", padding: "20px", borderRadius: "18px", boxShadow: "0 8px 25px rgba(0,0,0,0.08)", textAlign: "center" }}>
+    👨‍🏫<br />
+    <strong>Assistant Professor</strong>
+  </div>
+
+  <div style={{ background: "#fff", padding: "20px", borderRadius: "18px", boxShadow: "0 8px 25px rgba(0,0,0,0.08)", textAlign: "center" }}>
+    ⭐<br />
+    <strong>5+ Years Experience</strong>
+  </div>
+</div>
     </section>
   );
 }
