@@ -1,22 +1,4 @@
 export default function Testimonials() {
-  const testimonials = [
-    {
-      name: "Patient from Ajmer",
-      review:
-        "Excellent treatment and clear explanation. I recovered well after my surgery. Highly recommended.",
-    },
-    {
-      name: "Patient from Rajasthan",
-      review:
-        "Very professional, caring and knowledgeable. The entire treatment process was smooth and reassuring.",
-    },
-    {
-      name: "Patient",
-      review:
-        "The diagnosis was accurate and the staff was very supportive. Thank you for the excellent care.",
-    },
-  ];
-
   return (
     <section
       style={{
@@ -26,7 +8,7 @@ export default function Testimonials() {
     >
       <div
         style={{
-          maxWidth: "1150px",
+          maxWidth: "900px",
           margin: "0 auto",
         }}
       >
@@ -39,7 +21,7 @@ export default function Testimonials() {
             marginBottom: "12px",
           }}
         >
-          What Our Patients Say
+          Google Reviews
         </h2>
 
         <div
@@ -48,59 +30,118 @@ export default function Testimonials() {
             height: "5px",
             background: "#25D366",
             borderRadius: "50px",
-            margin: "0 auto 50px",
+            margin: "0 auto 30px",
           }}
         />
 
-       <div
-  style={{
-    textAlign: "center",
-    background: "#F8FBFF",
-    padding: "50px 30px",
-    borderRadius: "22px",
-    boxShadow: "0 12px 30px rgba(0,0,0,0.08)",
-  }}
->
-  <div style={{ fontSize: "40px" }}>⭐⭐⭐⭐⭐</div>
+        <p
+          style={{
+            textAlign: "center",
+            color: "#666",
+            fontSize: "18px",
+            maxWidth: "700px",
+            margin: "0 auto 50px",
+            lineHeight: "30px",
+          }}
+        >
+          Trusted by patients for expert orthopedic care and compassionate
+          treatment.
+        </p>
 
-  <h3
-    style={{
-      color: "#0B3C5D",
-      fontSize: "30px",
-      marginTop: "20px",
-    }}
-  >
-    5.0 ★ Google Rating
-  </h3>
+        <div
+          style={{
+            background: "#F8FBFF",
+            borderRadius: "24px",
+            padding: "50px 30px",
+            textAlign: "center",
+            boxShadow: "0 12px 30px rgba(0,0,0,0.08)",
+          }}
+        >
+          <div
+            style={{
+              fontSize: "18px",
+              fontWeight: "700",
+              color: "#4285F4",
+              marginBottom: "12px",
+            }}
+          >
+            Google Reviews
+          </div>
 
-  <p
-    style={{
-      color: "#555",
-      fontSize: "18px",
-      lineHeight: "30px",
-      margin: "20px 0",
-    }}
-  >
-    Read all verified Google reviews from our patients and see why they trust Dr. Ishaan Meena for orthopedic care.
-  </p>
+          <div
+            style={{
+              fontSize: "42px",
+              marginBottom: "15px",
+            }}
+          >
+            ⭐⭐⭐⭐⭐
+          </div>
 
-  <a
-    href="https://maps.app.goo.gl/TqqUAeKrBJVqVREAA"
-    target="_blank"
-    rel="noopener noreferrer"
-    style={{
-      display: "inline-block",
-      background: "#2563EB",
-      color: "#fff",
-      padding: "14px 28px",
-      borderRadius: "10px",
-      textDecoration: "none",
-      fontWeight: "700",
-    }}
-  >
-    Read All Google Reviews
-  </a>
-</div>
+          <h3
+            style={{
+              color: "#0B3C5D",
+              fontSize: "32px",
+              fontWeight: "800",
+              margin: "0",
+            }}
+          >
+            Trusted by 100+ Happy Patients
+          </h3>
+
+          <p
+            style={{
+              color: "#0B3C5D",
+              fontSize: "22px",
+              fontWeight: "700",
+              marginTop: "15px",
+              marginBottom: "10px",
+            }}
+          >
+            5.0 ★ Google Rating
+          </p>
+
+          <p
+            style={{
+              color: "#666",
+              fontSize: "16px",
+              marginBottom: "30px",
+            }}
+          >
+            Verified patient reviews
+          </p>
+
+          <p
+            style={{
+              color: "#555",
+              fontSize: "18px",
+              lineHeight: "30px",
+              maxWidth: "650px",
+              margin: "0 auto 35px",
+            }}
+          >
+            Read genuine Google reviews from our patients and discover why they
+            trust Dr. Ishaan Meena for expert orthopedic care.
+          </p>
+
+          <a
+            href="https://maps.app.goo.gl/TqqUAeKrBJVqVREAA"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{
+              display: "inline-block",
+              background: "#2563EB",
+              color: "#ffffff",
+              padding: "15px 32px",
+              borderRadius: "12px",
+              textDecoration: "none",
+              fontWeight: "700",
+              fontSize: "18px",
+              boxShadow: "0 8px 20px rgba(37,99,235,0.3)",
+            }}
+          >
+            View Reviews on Google →
+          </a>
+        </div>
       </div>
     </section>
   );
