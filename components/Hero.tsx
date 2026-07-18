@@ -184,6 +184,30 @@ export default function Hero() {
             Call Now
           </a>
         </div>
+        <div
+  style={{
+    display: "flex",
+    justifyContent: "space-between",
+    marginTop: "30px",
+    textAlign: "center",
+    gap: "15px",
+  }}
+>
+  <div>
+    <div style={{ fontSize: "26px", fontWeight: "bold" }}>5000+</div>
+    <div style={{ color: "#D7EFFF", fontSize: "14px" }}>Patients</div>
+  </div>
+
+  <div>
+    <div style={{ fontSize: "26px", fontWeight: "bold" }}>1000+</div>
+    <div style={{ color: "#D7EFFF", fontSize: "14px" }}>Procedures</div>
+  </div>
+
+  <div>
+    <div style={{ fontSize: "26px", fontWeight: "bold" }}>5+</div>
+    <div style={{ color: "#D7EFFF", fontSize: "14px" }}>Years</div>
+  </div>
+</div>
       </div>
 
       {/* Right Side */}
