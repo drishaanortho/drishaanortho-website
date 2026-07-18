@@ -52,48 +52,55 @@ export default function Testimonials() {
           }}
         />
 
-        <div
-          style={{
-            display: "grid",
-            gridTemplateColumns: "repeat(auto-fit,minmax(280px,1fr))",
-            gap: "25px",
-          }}
-        >
-          {testimonials.map((item) => (
-            <div
-              key={item.name + item.review}
-              style={{
-                background: "#F8FBFF",
-                padding: "30px",
-                borderRadius: "22px",
-                boxShadow: "0 12px 30px rgba(0,0,0,0.08)",
-              }}
-            >
-              <div style={{ fontSize: "24px", marginBottom: "15px" }}>
-                ⭐⭐⭐⭐⭐
-              </div>
+       <div
+  style={{
+    textAlign: "center",
+    background: "#F8FBFF",
+    padding: "50px 30px",
+    borderRadius: "22px",
+    boxShadow: "0 12px 30px rgba(0,0,0,0.08)",
+  }}
+>
+  <div style={{ fontSize: "40px" }}>⭐⭐⭐⭐⭐</div>
 
-              <p
-                style={{
-                  color: "#555",
-                  lineHeight: "30px",
-                  fontSize: "17px",
-                }}
-              >
-                "{item.review}"
-              </p>
+  <h3
+    style={{
+      color: "#0B3C5D",
+      fontSize: "30px",
+      marginTop: "20px",
+    }}
+  >
+    5.0 ★ Google Rating
+  </h3>
 
-              <h3
-                style={{
-                  color: "#0B3C5D",
-                  marginTop: "25px",
-                }}
-              >
-                — {item.name}
-              </h3>
-            </div>
-          ))}
-        </div>
+  <p
+    style={{
+      color: "#555",
+      fontSize: "18px",
+      lineHeight: "30px",
+      margin: "20px 0",
+    }}
+  >
+    Read all verified Google reviews from our patients and see why they trust Dr. Ishaan Meena for orthopedic care.
+  </p>
+
+  <a
+    href="https://maps.app.goo.gl/TqqUAeKrBJVqVREAA"
+    target="_blank"
+    rel="noopener noreferrer"
+    style={{
+      display: "inline-block",
+      background: "#2563EB",
+      color: "#fff",
+      padding: "14px 28px",
+      borderRadius: "10px",
+      textDecoration: "none",
+      fontWeight: "700",
+    }}
+  >
+    Read All Google Reviews
+  </a>
+</div>
       </div>
     </section>
   );
