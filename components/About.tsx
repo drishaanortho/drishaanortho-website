@@ -38,6 +38,11 @@ surgical techniques and compassionate treatment.
     marginTop: "35px",
   }}
 >
+        <div style={{ background: "#fff", padding: "20px", borderRadius: "18px", boxShadow: "0 8px 25px rgba(0,0,0,0.08)", textAlign: "center" }}>
+    👨‍🏫<br />
+    <strong>Assistant Professor</strong>
+  </div>
+        
   <div style={{ background: "#fff", padding: "20px", borderRadius: "18px", boxShadow: "0 8px 25px rgba(0,0,0,0.08)", textAlign: "center" }}>
     🎓<br />
     <strong>MS (Orthopaedics)</strong>
@@ -45,14 +50,11 @@ surgical techniques and compassionate treatment.
 
   <div style={{ background: "#fff", padding: "20px", borderRadius: "18px", boxShadow: "0 8px 25px rgba(0,0,0,0.08)", textAlign: "center" }}>
     🦴<br />
-    <strong>Advanced Shoulder Fellowship</strong>
+    🦴
+<strong>Fellowship in Advanced Shoulder Surgery</strong>
   </div>
 
-  <div style={{ background: "#fff", padding: "20px", borderRadius: "18px", boxShadow: "0 8px 25px rgba(0,0,0,0.08)", textAlign: "center" }}>
-    👨‍🏫<br />
-    <strong>Assistant Professor</strong>
-  </div>
-
+  
   <div style={{ background: "#fff", padding: "20px", borderRadius: "18px", boxShadow: "0 8px 25px rgba(0,0,0,0.08)", textAlign: "center" }}>
     ⭐<br />
     <strong>5+ Years Experience</strong>
