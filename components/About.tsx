@@ -33,14 +33,15 @@ export default function About() {
       />
 
       <p
-        style={{
-          fontSize: "20px",
-          lineHeight: "38px",
-          color: "#444",
-          textAlign: "center",
-          maxWidth: "900px",
-          margin: "0 auto",
-        }}
+  style={{
+    fontSize: "20px",
+    lineHeight: "42px",
+    color: "#444",
+    textAlign: "center",
+    maxWidth: "700px",
+    margin: "0 auto 50px",
+  }}
+>
       >
         Dr. Ishaan Meena is a dedicated <strong>Orthopedic Surgeon</strong> and
         <strong> Assistant Professor</strong> at Jawaharlal Nehru Medical
@@ -63,7 +64,7 @@ export default function About() {
         <div
           style={{
             background: "#fff",
-            padding: "28px",
+            padding: "35px 28px",
             borderRadius: "22px",
             boxShadow: "0 12px 30px rgba(0,0,0,0.08)",
             borderTop: "5px solid #25D366",
@@ -80,7 +81,7 @@ export default function About() {
         <div
           style={{
             background: "#fff",
-            padding: "28px",
+            padding: "35px 28px",
             borderRadius: "22px",
             boxShadow: "0 12px 30px rgba(0,0,0,0.08)",
             borderTop: "5px solid #25D366",
@@ -97,7 +98,7 @@ export default function About() {
         <div
           style={{
             background: "#fff",
-            padding: "28px",
+            padding: "35px 28px",
             borderRadius: "22px",
             boxShadow: "0 12px 30px rgba(0,0,0,0.08)",
             borderTop: "5px solid #25D366",
@@ -116,7 +117,7 @@ export default function About() {
         <div
           style={{
             background: "#fff",
-            padding: "28px",
+            padding: "35px 28px",
             borderRadius: "22px",
             boxShadow: "0 12px 30px rgba(0,0,0,0.08)",
             borderTop: "5px solid #25D366",
