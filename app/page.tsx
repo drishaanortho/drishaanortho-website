@@ -284,7 +284,14 @@ transition: "0.3s",
   💬 WhatsApp
 </a>
 
-        <p style={{ fontSize: "20px" }}>📞 +91 70235 62036</p>
+        <p style={{ fontSize: "20px" }}>
+  <a
+    href="tel:+917023562036"
+    style={{ color: "white", textDecoration: "none" }}
+  >
+    📞 +91 70235 62036
+  </a>
+</p>
         <p style={{ fontSize: "20px" }}>🕒 3:00 PM – 8:00 PM (Every Day)</p>
 
         <p style={{ fontSize: "20px" }}>
