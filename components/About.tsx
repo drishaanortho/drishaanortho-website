@@ -42,7 +42,6 @@ export default function About() {
     margin: "0 auto 50px",
   }}
 >
-      >
         Dr. Ishaan Meena is a dedicated <strong>Orthopedic Surgeon</strong> and
         <strong> Assistant Professor</strong> at Jawaharlal Nehru Medical
         College, Ajmer. He completed his <strong>MBBS</strong>,
