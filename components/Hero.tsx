@@ -44,17 +44,38 @@ export default function Hero() {
           Dr. Ishaan Meena
         </h1>
 
-        <p
-          style={{
-            fontSize: "24px",
-            marginTop: "18px",
-            color: "#EAF4FF",
-          }}
-        >
-          MS (Orthopaedics)
-          <br />
-          Fellowship in Advanced Shoulder Surgery
-        </p>
+        <div
+  style={{
+    display: "flex",
+    flexWrap: "wrap",
+    gap: "10px",
+    marginTop: "18px",
+  }}
+>
+  <span
+    style={{
+      background: "rgba(255,255,255,0.15)",
+      padding: "8px 16px",
+      borderRadius: "999px",
+      fontSize: "16px",
+      fontWeight: "600",
+    }}
+  >
+    🎓 MS (Orthopaedics)
+  </span>
+
+  <span
+    style={{
+      background: "rgba(255,255,255,0.15)",
+      padding: "8px 16px",
+      borderRadius: "999px",
+      fontSize: "16px",
+      fontWeight: "600",
+    }}
+  >
+    🦴 Advanced Shoulder Fellowship
+  </span>
+</div>
         <p
   style={{
     fontSize: "18px",
