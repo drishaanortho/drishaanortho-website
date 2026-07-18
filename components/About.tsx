@@ -21,14 +21,11 @@ export default function About() {
           color: "#444",
         }}
       >
-        Dr. Ishaan Meena is an Orthopaedic & Shoulder Surgeon and
-Assistant Professor at JLN Medical College, Ajmer.
-He specializes in trauma care, shoulder surgery,
-arthroscopy, sports injury management, joint replacement,
-spine disorders, deformity correction, and complex
-fracture treatment. His focus is on providing
-evidence-based, patient-centred care with modern
-surgical techniques and compassionate treatment.
+        Dr. Ishaan Meena is an Orthopedic Surgeon and Assistant Professor at JLN Medical College, Ajmer.
+
+He specializes in fracture management, joint replacement, sports injuries, arthroscopy, spine disorders, trauma surgery, and comprehensive orthopedic care.
+
+His commitment is to provide evidence-based treatment, modern surgical techniques, and compassionate patient-centered care for the best possible outcomes.
       </p>
       <div
   style={{
