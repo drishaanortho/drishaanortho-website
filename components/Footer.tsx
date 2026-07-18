@@ -36,7 +36,7 @@ export default function Footer() {
             <br />
             Fellowship in Advanced Shoulder Surgery
             <br />
-            Assistant Professor,
+            Assistant Professor
             <br />
             JLN Medical College, Ajmer
           </p>
@@ -64,21 +64,27 @@ export default function Footer() {
             Contact
           </h3>
 
-          <p style={{ lineHeight: "32px" }}>
+          <p style={{ lineHeight: "34px" }}>
             📞{" "}
             <a
               href="tel:+917023562036"
-              style={{ color: "#ffffff", textDecoration: "none" }}
+              style={{
+                color: "#ffffff",
+                textDecoration: "none",
+              }}
             >
               +91 70235 62036
             </a>
           </p>
 
-          <p style={{ lineHeight: "32px" }}>
+          <p style={{ lineHeight: "34px" }}>
             📧{" "}
             <a
               href="mailto:dr.ishaanmeena@gmail.com"
-              style={{ color: "#ffffff", textDecoration: "none" }}
+              style={{
+                color: "#ffffff",
+                textDecoration: "none",
+              }}
             >
               dr.ishaanmeena@gmail.com
             </a>
@@ -90,20 +96,16 @@ export default function Footer() {
               marginTop: "10px",
             }}
           >
-            📍 Shiv Enclave Apartments,
+            📍 Shiv Enclave Apartments
             <br />
             Near Ajmer Hospital &
             <br />
-            Savitri School,
+            Savitri School
             <br />
             Civil Lines, Ajmer
           </p>
 
-          <p
-            style={{
-              marginTop: "15px",
-            }}
-          >
+          <p style={{ marginTop: "15px" }}>
             🕒 Daily: 3:00 PM – 8:00 PM
           </p>
         </div>
@@ -119,11 +121,15 @@ export default function Footer() {
             Quick Links
           </h3>
 
-          <p style={{ lineHeight: "34px" }}>Home</p>
-          <p style={{ lineHeight: "34px" }}>About</p>
-          <p style={{ lineHeight: "34px" }}>Services</p>
-          <p style={{ lineHeight: "34px" }}>Google Reviews</p>
-          <p style={{ lineHeight: "34px" }}>Contact</p>
+          <a href="#home" style={{ display: "block", color: "#fff", textDecoration: "none", lineHeight: "34px" }}>Home</a>
+
+<a href="#about" style={{ display: "block", color: "#fff", textDecoration: "none", lineHeight: "34px" }}>About</a>
+
+<a href="#services" style={{ display: "block", color: "#fff", textDecoration: "none", lineHeight: "34px" }}>Services</a>
+
+<a href="#reviews" style={{ display: "block", color: "#fff", textDecoration: "none", lineHeight: "34px" }}>Google Reviews</a>
+
+<a href="#contact" style={{ display: "block", color: "#fff", textDecoration: "none", lineHeight: "34px" }}>Contact</a>
         </div>
 
         {/* Connect */}
@@ -137,17 +143,47 @@ export default function Footer() {
             Connect
           </h3>
 
-          <p style={{ lineHeight: "34px" }}>
+          <a
+            href="https://instagram.com/dr.ishaan.orho"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{
+              display: "block",
+              color: "#ffffff",
+              textDecoration: "none",
+              lineHeight: "34px",
+            }}
+          >
             📷 Instagram
-          </p>
+          </a>
 
-          <p style={{ lineHeight: "34px" }}>
+          <a
+            href="https://www.linkedin.com/in/dr-ishaan-meena"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{
+              display: "block",
+              color: "#ffffff",
+              textDecoration: "none",
+              lineHeight: "34px",
+            }}
+          >
             💼 LinkedIn
-          </p>
+          </a>
 
-          <p style={{ lineHeight: "34px" }}>
+          <a
+            href="https://maps.app.goo.gl/TqqUAeKrBJVqVREAA"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{
+              display: "block",
+              color: "#ffffff",
+              textDecoration: "none",
+              lineHeight: "34px",
+            }}
+          >
             ⭐ Google Reviews
-          </p>
+          </a>
         </div>
       </div>
 
@@ -160,7 +196,7 @@ export default function Footer() {
           fontSize: "15px",
         }}
       >
-        © 2026 Dr. Ishaan Meena Orthopaedic Clinic. All Rights Reserved.
+        © {new Date().getFullYear()} Dr. Ishaan Meena Orthopaedic Clinic. All Rights Reserved.
         <br />
         Providing trusted orthopaedic care with compassion and excellence.
       </div>
