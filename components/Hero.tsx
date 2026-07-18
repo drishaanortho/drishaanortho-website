@@ -52,7 +52,28 @@ export default function Hero() {
           <br />
           Fellowship in Advanced Shoulder Surgery
         </p>
-
+        <p
+  style={{
+    fontSize: "18px",
+    color: "#D7EFFF",
+    marginTop: "10px",
+    fontWeight: "600",
+  }}
+>
+  Assistant Professor, JLN Medical College, Ajmer
+</p>
+        <div
+  style={{
+    display: "inline-block",
+    background: "rgba(255,255,255,0.18)",
+    padding: "10px 18px",
+    borderRadius: "999px",
+    marginTop: "18px",
+    fontWeight: "bold",
+  }}
+>
+  🕒 OPD: 3:00 PM – 8:00 PM (Every Day)
+</div>
         <p
           style={{
             marginTop: "20px",
