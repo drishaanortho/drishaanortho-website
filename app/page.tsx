@@ -306,7 +306,7 @@ transition: "0.3s",
           backgroundColor: "#06263B",
           color: "white",
           textAlign: "center",
-          padding: "20px",
+          padding: "20px 20px 90px",
         }}
       >
         <p>© {new Date().getFullYear()} Dr. Ishaan Meena | Orthopaedic & Shoulder Surgeon</p>
