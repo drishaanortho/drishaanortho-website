@@ -2,6 +2,7 @@ import Hero from "../components/Hero";
 import About from "../components/About";
 import WhyChooseUs from "../components/WhyChooseUs";
 import Services from "../components/Services";
+import Testimonials from "../components/Testimonials";
 export default function Home() {
   
   return (
@@ -163,6 +164,7 @@ transition: "0.3s",
   </div>
 </section>
       <Services />
+      <Testimonials />
 
       <section
         id="contact"
