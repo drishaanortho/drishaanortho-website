@@ -221,7 +221,25 @@ transition: "0.3s",
           padding: "60px 20px",
         }}
       >
-        <h2 style={{ fontSize: "42px", marginBottom: "30px" }}>Contact</h2>
+        <h2
+  style={{
+    fontSize: "42px",
+    marginBottom: "15px",
+    fontWeight: "700",
+  }}
+>
+  Contact Us
+</h2>
+
+<p
+  style={{
+    fontSize: "20px",
+    color: "#D9EAF7",
+    marginBottom: "40px",
+  }}
+>
+  We're here to help you. Reach out or visit our clinic.
+</p>
 
         <p style={{ fontSize: "20px", lineHeight: "36px" }}>
           📍 Shiv Enclave Apartments, Near Ajmer Hospital & Savitri School,
@@ -246,6 +264,25 @@ transition: "0.3s",
         >
           View Clinic Location
         </a>
+        <a
+  href="https://wa.me/917023562036"
+  target="_blank"
+  rel="noopener noreferrer"
+  style={{
+    display: "inline-block",
+    marginLeft: "15px",
+    marginTop: "15px",
+    marginBottom: "20px",
+    backgroundColor: "#25D366",
+    color: "white",
+    padding: "12px 24px",
+    borderRadius: "10px",
+    textDecoration: "none",
+    fontWeight: "bold",
+  }}
+>
+  💬 WhatsApp
+</a>
 
         <p style={{ fontSize: "20px" }}>📞 +91 70235 62036</p>
         <p style={{ fontSize: "20px" }}>🕒 3:00 PM – 8:00 PM (Every Day)</p>
