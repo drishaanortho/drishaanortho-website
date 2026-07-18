@@ -3,6 +3,7 @@ import About from "../components/About";
 import WhyChooseUs from "../components/WhyChooseUs";
 import Services from "../components/Services";
 import Testimonials from "../components/Testimonials";
+import Footer from "../components/Footer";
 export default function Home() {
   
   return (
@@ -255,17 +256,7 @@ transition: "0.3s",
         </p>
       </section>
 
-      <footer
-        style={{
-          backgroundColor: "#06263B",
-          color: "white",
-          textAlign: "center",
-          padding: "20px 20px 90px",
-        }}
-      >
-        <p>© {new Date().getFullYear()} Dr. Ishaan Meena | Orthopaedic & Shoulder Surgeon</p>
-      </footer>
-
+      <Footer />
       <a
         href="https://wa.me/917023562036"
         target="_blank"
