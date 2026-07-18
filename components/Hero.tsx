@@ -67,6 +67,39 @@ export default function Hero() {
 </p>
         <div
   style={{
+    display: "flex",
+    gap: "10px",
+    flexWrap: "wrap",
+    marginTop: "18px",
+    marginBottom: "10px",
+  }}
+>
+  <span
+    style={{
+      background: "rgba(255,255,255,0.18)",
+      padding: "8px 14px",
+      borderRadius: "999px",
+      fontSize: "14px",
+      fontWeight: "600",
+    }}
+  >
+    🩺 Orthopaedic Surgeon
+  </span>
+
+  <span
+    style={{
+      background: "rgba(255,255,255,0.18)",
+      padding: "8px 14px",
+      borderRadius: "999px",
+      fontSize: "14px",
+      fontWeight: "600",
+    }}
+  >
+    ⭐ Fellowship Trained
+  </span>
+</div>
+        <div
+  style={{
     display: "inline-block",
     background: "rgba(255,255,255,0.18)",
     padding: "10px 18px",
