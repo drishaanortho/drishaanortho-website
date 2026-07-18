@@ -33,10 +33,13 @@ export default function Hero() {
 
         <h1
           style={{
-            fontSize: "54px",
-            margin: 0,
-            lineHeight: "1.2",
-          }}
+  fontSize: "58px",
+  margin: 0,
+  lineHeight: "1.1",
+  fontWeight: "800",
+  letterSpacing: "-1px",
+  color: "white",
+}}
         >
           Dr. Ishaan Meena
         </h1>
