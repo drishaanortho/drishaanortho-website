@@ -214,7 +214,7 @@ transition: "0.3s",
         </p>
 
         <a
-          href="https://maps.app.goo.gl/aPpDrVNk3fE9bckU6"
+          href="https://maps.app.goo.gl/qjg22wTr6N7DtpS69"
           target="_blank"
           rel="noopener noreferrer"
           style={{
@@ -229,7 +229,7 @@ transition: "0.3s",
             fontWeight: "bold",
           }}
         >
-          View Clinic Location
+          🗺️ Get Directions
         </a>
         <a
   href="https://wa.me/917023562036"
