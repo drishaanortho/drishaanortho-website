@@ -175,7 +175,9 @@ transition: "0.3s",
   <Services />
 </div>
 
-<Testimonials />
+<div id="reviews">
+  <Testimonials />
+</div>
 
       <section
         id="contact"
