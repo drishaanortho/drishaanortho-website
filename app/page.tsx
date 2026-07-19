@@ -9,12 +9,13 @@ export default function Home() {
   return (
     <main
   id="home"
-      style={{
-        fontFamily: "Arial, sans-serif",
-        backgroundColor: "#f4f8fc",
-        minHeight: "100vh",
-      }}
-    >
+  style={{
+    fontFamily: "Arial, sans-serif",
+    backgroundColor: "#f4f8fc",
+    minHeight: "100vh",
+    scrollBehavior: "smooth",
+  }}
+>
       {/* NAVBAR */}
       <nav
         style={{
