@@ -31,9 +31,29 @@ export default function Navbar() {
         🩺 Dr Ishaan Ortho
       </h2>
 
-      <div>
-        Navbar Loading...
-      </div>
+      <div
+  style={{
+    display: "flex",
+    gap: "20px",
+    alignItems: "center",
+  }}
+>
+  <a href="#home" style={{ textDecoration: "none", color: "#0B3C5D", fontWeight: 600 }}>
+    Home
+  </a>
+
+  <a href="#about" style={{ textDecoration: "none", color: "#0B3C5D", fontWeight: 600 }}>
+    About
+  </a>
+
+  <a href="#services" style={{ textDecoration: "none", color: "#0B3C5D", fontWeight: 600 }}>
+    Services
+  </a>
+
+  <a href="#contact" style={{ textDecoration: "none", color: "#0B3C5D", fontWeight: 600 }}>
+    Contact
+  </a>
+</div>
     </nav>
   );
 }
