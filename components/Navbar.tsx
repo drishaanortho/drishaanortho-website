@@ -21,16 +21,45 @@ export default function Navbar() {
         zIndex: 1000,
       }}
     >
-      <h2
-        style={{
-          margin: 0,
-          color: "#0B3C5D",
-          fontWeight: "800",
-          fontSize: "24px",
-        }}
-      >
-        🩺 Dr Ishaan Ortho
-      </h2>
+      <div
+  style={{
+    display: "flex",
+    alignItems: "center",
+    gap: "12px",
+  }}
+>
+  <Image
+    src="/logo.png"
+    alt="Dr. Ishaan Meena Orthopaedic Clinic"
+    width={55}
+    height={55}
+  />
+
+  <div>
+    <h2
+      style={{
+        margin: 0,
+        color: "#0B3C5D",
+        fontSize: "22px",
+        fontWeight: "800",
+        lineHeight: "1.1",
+      }}
+    >
+      Dr. Ishaan Meena
+    </h2>
+
+    <p
+      style={{
+        margin: 0,
+        color: "#666",
+        fontSize: "13px",
+        fontWeight: "600",
+      }}
+    >
+      Orthopaedic Clinic
+    </p>
+  </div>
+</div>
 
       <div
   style={{
