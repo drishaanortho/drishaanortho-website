@@ -8,6 +8,7 @@ export default function Home() {
   
   return (
     <main
+  id="home"
       style={{
         fontFamily: "Arial, sans-serif",
         backgroundColor: "#f4f8fc",
@@ -76,7 +77,11 @@ transition: "0.3s",
 }}>Contact</a>
       </nav>
 <Hero />
-<About />
+
+<div id="about">
+  <About />
+</div>
+
 <WhyChooseUs />
         {/* WHY CHOOSE US */}
 
