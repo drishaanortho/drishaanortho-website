@@ -222,11 +222,11 @@ export default function Hero() {
           src="/dr-ishaan.jpg"
           alt="Dr Ishaan Meena"
           style={{
-            width: "320px",
+            width: "380px",
             maxWidth: "100%",
-            borderRadius: "25px",
-            border: "6px solid white",
-            boxShadow: "0 20px 50px rgba(0,0,0,.3)",
+            borderRadius: "35px",
+            border: "8px solid rgba(255,255,255,0.95)",
+            boxShadow: "0 30px 70px rgba(0,0,0,.35)",
           }}
         />
       </div>
