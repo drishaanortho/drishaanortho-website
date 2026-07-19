@@ -4,6 +4,7 @@ import WhyChooseUs from "../components/WhyChooseUs";
 import Services from "../components/Services";
 import Testimonials from "../components/Testimonials";
 import Footer from "../components/Footer";
+import Navbar from "../components/Navbar";
 export default function Home() {
   
   return (
@@ -17,66 +18,7 @@ export default function Home() {
   }}
 >
       {/* NAVBAR */}
-      <nav
-        style={{
-          position: "sticky",
-top: "15px",
-margin: "0 auto",
-width: "95%",
-maxWidth: "1200px",
-background: "rgba(255,255,255,0.75)",
-backdropFilter: "blur(18px)",
-borderRadius: "18px",
-padding: "16px 24px",
-display: "flex",
-justifyContent: "space-around",
-alignItems: "center",
-zIndex: 1000,
-boxShadow: "0 10px 30px rgba(11,60,93,0.15)",
-border: "1px solid rgba(255,255,255,0.4)",
-        }}
-      >
-        <a href="#home" style={{
-  textDecoration: "none",
-  color: "#0B3C5D",
-fontSize: "17px",
-fontWeight: "700",
-letterSpacing: "0.3px",
-padding: "10px 16px",
-borderRadius: "12px",
-transition: "0.3s",
-}}>Home</a>
-        <a href="#about" style={{
-  textDecoration: "none",
-  color: "#0B3C5D",
-fontSize: "17px",
-fontWeight: "700",
-letterSpacing: "0.3px",
-padding: "10px 16px",
-borderRadius: "12px",
-transition: "0.3s",
-}}>About</a>
-        <a href="#services" style={{
-  textDecoration: "none",
-  color: "#0B3C5D",
-fontSize: "17px",
-fontWeight: "700",
-letterSpacing: "0.3px",
-padding: "10px 16px",
-borderRadius: "12px",
-transition: "0.3s",
-}}>Services</a>
-        <a href="#contact" style={{
-  textDecoration: "none",
-  color: "#0B3C5D",
-fontSize: "17px",
-fontWeight: "700",
-letterSpacing: "0.3px",
-padding: "10px 16px",
-borderRadius: "12px",
-transition: "0.3s",
-}}>Contact</a>
-      </nav>
+      <Navbar />
 <Hero />
 
 <div id="about">
