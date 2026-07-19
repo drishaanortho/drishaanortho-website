@@ -169,7 +169,6 @@ transition: "0.3s",
     </div>
   </div>
 </section>
-      </section>
 
 <div id="services">
   <Services />
