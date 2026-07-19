@@ -5,7 +5,7 @@ export default function Hero() {
       style={{
         maxWidth: "1250px",
         margin: "30px auto",
-        padding: "70px 30px",
+        padding: "110px 30px 70px",
         background:
           "linear-gradient(135deg,#0B3C5D 0%,#1976D2 100%)",
         borderRadius: "30px",
