@@ -5,6 +5,7 @@ import Services from "../components/Services";
 import Testimonials from "../components/Testimonials";
 import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
+import GoogleReviews from "../components/GoogleReviews";
 export default function Home() {
   
   return (
@@ -20,6 +21,7 @@ export default function Home() {
       {/* NAVBAR */}
       <Navbar />
 <Hero />
+      <GoogleReviews />
 
 <div id="about">
   <About />
