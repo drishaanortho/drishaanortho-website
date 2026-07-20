@@ -1,7 +1,6 @@
 export default function StickyContactBar() {
   return (
     <div
-      style={{
         style={{
   position: "fixed",
   bottom: "15px",
