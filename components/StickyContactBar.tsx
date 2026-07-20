@@ -2,14 +2,17 @@ export default function StickyContactBar() {
   return (
     <div
       style={{
-        position: "fixed",
-        bottom: "0",
-        left: "0",
-        width: "100%",
-        display: "flex",
-        zIndex: 9999,
-        boxShadow: "0 -4px 10px rgba(0,0,0,0.15)",
-      }}
+        style={{
+  position: "fixed",
+  bottom: "15px",
+  left: "15px",
+  right: "15px",
+  display: "flex",
+  zIndex: 9999,
+  borderRadius: "18px",
+  overflow: "hidden",
+  boxShadow: "0 8px 20px rgba(0,0,0,0.2)",
+}}
     >
       <a
         href="tel:+917023562036"
@@ -35,7 +38,7 @@ export default function StickyContactBar() {
           background: "#25D366",
           color: "white",
           textAlign: "center",
-          padding: "16px",
+          padding: "14px",
           textDecoration: "none",
           fontWeight: "bold",
           fontSize: "18px",
