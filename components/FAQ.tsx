@@ -1,3 +1,6 @@
+"use client";
+
+import { useState } from "react";
 export default function FAQ() {
   const faqs = [
     {
@@ -21,6 +24,7 @@ export default function FAQ() {
       answer: "Yes. Emergency trauma and fracture care is available.",
     },
   ];
+  const [openIndex, setOpenIndex] = useState<number | null>(0);
 
   return (
     <section
@@ -43,21 +47,27 @@ export default function FAQ() {
       <div style={{ maxWidth: "900px", margin: "auto" }}>
         {faqs.map((faq, index) => (
           <div
-            key={index}
-            style={{
-              background: "white",
-              marginBottom: "20px",
-              padding: "20px",
-              borderRadius: "12px",
-              boxShadow: "0 4px 12px rgba(0,0,0,0.08)",
-            }}
+    key={index}
+    onClick={() =>
+        setOpenIndex(openIndex === index ? null : index)
+    }
+    style={{
+        background: "white",
+        marginBottom: "20px",
+        padding: "20px",
+        borderRadius: "12px",
+        boxShadow: "0 4px 12px rgba(0,0,0,0.08)",
+        cursor: "pointer",
+    }}
           >
             <h3 style={{ color: "#0B3C5D", marginBottom: "10px" }}>
               {faq.question}
             </h3>
-            <p style={{ color: "#555", lineHeight: "1.7" }}>
-              {faq.answer}
-            </p>
+            {openIndex === index && (
+    <p style={{ color: "#555", lineHeight: "1.7" }}>
+        {faq.answer}
+    </p>
+)}
           </div>
         ))}
       </div>
