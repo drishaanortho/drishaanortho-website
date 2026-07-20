@@ -3,7 +3,7 @@ export default function GoogleReviews() {
     <section
   style={{
     background: "#ffffff",
-    padding: "40px 20px",
+    padding: "120px 20px 40px",
     textAlign: "center",
   }}
 >
