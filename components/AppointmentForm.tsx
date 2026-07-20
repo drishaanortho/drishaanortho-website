@@ -80,7 +80,7 @@ export default function AppointmentForm() {
       `Problem: ${problem}`;
 
     window.open(
-      `https://wa.me/917023562036?text=${message}`,
+      `https://api.whatsapp.com/send?phone=917023562036&text=${message}`,
       "_blank"
     );
   }}
