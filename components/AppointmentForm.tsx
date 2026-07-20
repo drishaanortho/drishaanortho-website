@@ -79,10 +79,16 @@ export default function AppointmentForm() {
       `Preferred Date: ${date}%0A` +
       `Problem: ${problem}`;
 
-    window.open(
-      `https://api.whatsapp.com/send?phone=917023562036&text=${message}`,
-      "_blank"
-    );
+    window.location.href =
+  `https://wa.me/917023562036?text=${encodeURIComponent(
+    `Appointment Request
+
+Name: ${name}
+Phone: ${phone}
+Age: ${age}
+Preferred Date: ${date}
+Problem: ${problem}`
+  )}`;
   }}
   style={{
     marginTop: "25px",
