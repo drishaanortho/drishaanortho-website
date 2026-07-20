@@ -4,13 +4,13 @@ export default function Hero() {
       id="home"
       style={{
         maxWidth: "1250px",
-        margin: "30px auto",
+        margin: "20px auto",
         padding: "110px 30px 70px",
         background:
           "linear-gradient(135deg,#0B3C5D 0%,#1976D2 100%)",
         borderRadius: "30px",
         display: "flex",
-        flexWrap: "wrap",
+        flexWrap: "wrap-reverse",
         alignItems: "center",
         justifyContent: "space-between",
         gap: "40px",
