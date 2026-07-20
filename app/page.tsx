@@ -213,6 +213,25 @@ export default function Home() {
           </a>
         </p>
       </section>
+      <div
+  style={{
+    marginTop: "40px",
+    borderRadius: "16px",
+    overflow: "hidden",
+    maxWidth: "1000px",
+    marginLeft: "auto",
+    marginRight: "auto",
+    boxShadow: "0 6px 20px rgba(0,0,0,0.15)",
+  }}
+        >
+      <iframe
+    src="https://www.google.com/maps?q=Dr+Ishaan+Meena+Ajmer&output=embed"
+    width="100%"
+    height="350"
+    style={{ border: 0 }}
+    loading="lazy"
+  />
+</div>
 
       <Footer />
       <StickyContactBar />
