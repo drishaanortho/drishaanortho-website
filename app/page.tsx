@@ -7,7 +7,6 @@ import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
 import GoogleReviews from "../components/GoogleReviews";
 import StickyContactBar from "../components/StickyContactBar";
-import FAQ from "../components/FAQ";
 export default function Home() {
   
   return (
@@ -125,7 +124,6 @@ export default function Home() {
   <Testimonials />
   
 </div>
-       <FAQ />
 
       <section
         id="contact"
