@@ -6,6 +6,7 @@ import Testimonials from "../components/Testimonials";
 import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
 import GoogleReviews from "../components/GoogleReviews";
+import StickyContactBar from "../components/StickyContactBar";
 export default function Home() {
   
   return (
@@ -213,29 +214,7 @@ export default function Home() {
       </section>
 
       <Footer />
-      <a
-        href="https://wa.me/917023562036"
-        target="_blank"
-        rel="noopener noreferrer"
-        style={{
-          position: "fixed",
-          bottom: "20px",
-          right: "20px",
-          backgroundColor: "#25D366",
-          color: "white",
-          width: "60px",
-          height: "60px",
-          borderRadius: "50%",
-          display: "flex",
-          justifyContent: "center",
-          alignItems: "center",
-          textDecoration: "none",
-          fontSize: "30px",
-          boxShadow: "0 4px 12px rgba(0,0,0,0.3)",
-        }}
-      >
-        💬
-      </a>
+      <StickyContactBar />
     </main>
   );
 }
