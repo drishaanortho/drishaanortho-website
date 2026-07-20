@@ -29,7 +29,7 @@ export default function GoogleReviews() {
     }}
   >
     <a
-      href="YOUR_GOOGLE_REVIEW_LINK"
+      href="https://www.google.com/search?q=Dr+Ishaan+Meena+Ajmer"
       target="_blank"
       style={{
         background: "#0B5ED7",
