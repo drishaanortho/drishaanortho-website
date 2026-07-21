@@ -78,7 +78,8 @@ export default function Navbar() {
             </div>
           </div>
         </a>
-                {/* Desktop Menu */}
+
+        {/* Desktop Menu */}
         <div
           className="desktop-menu"
           style={{
@@ -98,9 +99,7 @@ export default function Navbar() {
           <a href="#contact" style={navLink}>Contact</a>
 
           <a
-            href="https://wa.me/919XXXXXXXXX"
-            target="_blank"
-            rel="noopener noreferrer"
+            href="#appointment"
             style={{
               background: "#D4AF37",
               color: "#fff",
@@ -114,7 +113,7 @@ export default function Navbar() {
           </a>
         </div>
 
-        {/* Mobile Button */}
+        {/* Mobile Menu Button */}
         <button
           onClick={() => setMenuOpen(!menuOpen)}
           style={{
@@ -158,9 +157,7 @@ export default function Navbar() {
           <a href="#contact" style={{ ...navLink, display: "block" }}>Contact</a>
 
           <a
-            href="https://wa.me/917023562036"
-            target="_blank"
-            rel="noopener noreferrer"
+            href="#appointment"
             style={{
               display: "block",
               marginTop: "12px",
@@ -177,7 +174,12 @@ export default function Navbar() {
           </a>
         </div>
       )}
-            <style jsx>{`
+
+      <style jsx>{`
+        html {
+          scroll-behavior: smooth;
+        }
+
         @media (max-width: 900px) {
           .desktop-menu {
             display: none !important;
