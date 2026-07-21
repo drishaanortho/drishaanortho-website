@@ -10,6 +10,22 @@ import StickyContactBar from "../components/StickyContactBar";
 import FAQ from "../components/FAQ";
 import AppointmentForm from "../components/AppointmentForm";
 export default function Home() {
+  const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Physician",
+  "name": "Dr. Ishaan Meena",
+  "medicalSpecialty": "Orthopedic",
+  "url": "https://drishaanortho.com",
+  "telephone": "+91 7023562036",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Shiv Enclave Apartments, Near Ajmer Hospital & Savitri School, Civil Lines",
+    "addressLocality": "Ajmer",
+    "addressRegion": "Rajasthan",
+    "postalCode": "305001",
+    "addressCountry": "IN"
+  }
+};
   
   return (
     <main
@@ -21,6 +37,12 @@ export default function Home() {
     scrollBehavior: "smooth",
   }}
 >
+      <script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{
+    __html: JSON.stringify(jsonLd),
+  }}
+/>
       {/* NAVBAR */}
       <Navbar />
 <Hero />
