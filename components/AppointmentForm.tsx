@@ -9,6 +9,20 @@ export default function AppointmentForm() {
   const [problem, setProblem] = useState("");
   const [date, setDate] = useState("");
 
+  const handleWhatsApp = () => {
+    const message = `*Appointment Request*
+
+Name: ${name}
+Mobile: ${phone}
+Age: ${age}
+Preferred Date: ${date}
+Problem: ${problem}`;
+
+    const url = `https://wa.me/917023562036?text=${encodeURIComponent(message)}`;
+
+    window.open(url, "_blank");
+  };
+
   return (
     <section
       style={{
@@ -26,87 +40,97 @@ export default function AppointmentForm() {
       >
         Book an Appointment
       </h2>
+
       <div
-  style={{
-    maxWidth: "600px",
-    margin: "0 auto",
-    display: "flex",
-    flexDirection: "column",
-    gap: "15px",
-  }}
->
-  <input
-    type="text"
-    placeholder="Full Name"
-    value={name}
-    onChange={(e) => setName(e.target.value)}
-  />
+        style={{
+          maxWidth: "600px",
+          margin: "0 auto",
+          display: "flex",
+          flexDirection: "column",
+          gap: "15px",
+        }}
+      >
+        <input
+          type="text"
+          placeholder="Full Name"
+          value={name}
+          onChange={(e) => setName(e.target.value)}
+          style={{
+            padding: "14px",
+            borderRadius: "8px",
+            border: "1px solid #ccc",
+            fontSize: "16px",
+          }}
+        />
 
-  <input
-    type="tel"
-    placeholder="Mobile Number"
-    value={phone}
-    onChange={(e) => setPhone(e.target.value)}
-  />
+        <input
+          type="tel"
+          placeholder="Mobile Number"
+          value={phone}
+          onChange={(e) => setPhone(e.target.value)}
+          style={{
+            padding: "14px",
+            borderRadius: "8px",
+            border: "1px solid #ccc",
+            fontSize: "16px",
+          }}
+        />
 
-  <input
-    type="number"
-    placeholder="Age"
-    value={age}
-    onChange={(e) => setAge(e.target.value)}
-  />
+        <input
+          type="number"
+          placeholder="Age"
+          value={age}
+          onChange={(e) => setAge(e.target.value)}
+          style={{
+            padding: "14px",
+            borderRadius: "8px",
+            border: "1px solid #ccc",
+            fontSize: "16px",
+          }}
+        />
 
-  <input
-    type="date"
-    value={date}
-    onChange={(e) => setDate(e.target.value)}
-  />
+        <input
+          type="date"
+          value={date}
+          onChange={(e) => setDate(e.target.value)}
+          style={{
+            padding: "14px",
+            borderRadius: "8px",
+            border: "1px solid #ccc",
+            fontSize: "16px",
+          }}
+        />
 
-  <textarea
-    placeholder="Describe your problem"
-    rows={4}
-    value={problem}
-    onChange={(e) => setProblem(e.target.value)}
-  />
-</div>
-      <button
-  onClick={() => {
-    const message =
-      `*Appointment Request*%0A%0A` +
-      `Name: ${name}%0A` +
-      `Phone: ${phone}%0A` +
-      `Age: ${age}%0A` +
-      `Preferred Date: ${date}%0A` +
-      `Problem: ${problem}`;
+        <textarea
+          placeholder="Describe your problem"
+          rows={5}
+          value={problem}
+          onChange={(e) => setProblem(e.target.value)}
+          style={{
+            padding: "14px",
+            borderRadius: "8px",
+            border: "1px solid #ccc",
+            fontSize: "16px",
+            resize: "vertical",
+          }}
+        />
 
-    window.location.href =
-  `https://wa.me/917023562036?text=${encodeURIComponent(
-    `Appointment Request
-
-Name: ${name}
-Phone: ${phone}
-Age: ${age}
-Preferred Date: ${date}
-Problem: ${problem}`
-  )}`;
-  }}
-  style={{
-    marginTop: "25px",
-    background: "#25D366",
-    color: "white",
-    border: "none",
-    padding: "15px 30px",
-    borderRadius: "10px",
-    fontSize: "18px",
-    fontWeight: "bold",
-    cursor: "pointer",
-    display: "block",
-    marginLeft: "auto",
-    marginRight: "auto",
-  }}
->
-  📅 Book on WhatsApp
-</button>
+        <button
+          onClick={handleWhatsApp}
+          style={{
+            background: "#25D366",
+            color: "white",
+            padding: "16px",
+            border: "none",
+            borderRadius: "10px",
+            fontSize: "18px",
+            fontWeight: "bold",
+            cursor: "pointer",
+          }}
+        >
+          📅 Book on WhatsApp
+        </button>
+      </div>
     </section>
   );
 }
