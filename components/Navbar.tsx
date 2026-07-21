@@ -6,6 +6,24 @@ import Image from "next/image";
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
 
+  const scrollToSection = (id: string) => {
+    const section = document.getElementById(id);
+
+    if (section) {
+      const y =
+        section.getBoundingClientRect().top +
+        window.pageYOffset -
+        95;
+
+      window.scrollTo({
+        top: y,
+        behavior: "smooth",
+      });
+
+      setMenuOpen(false);
+    }
+  };
+
   const navLink = {
     textDecoration: "none",
     color: "#0B3C5D",
@@ -14,6 +32,7 @@ export default function Navbar() {
     padding: "10px 14px",
     borderRadius: "10px",
     transition: "0.3s",
+    cursor: "pointer",
   } as const;
 
   return (
@@ -40,7 +59,11 @@ export default function Navbar() {
         }}
       >
         <a
-          href="#home"
+          href="#"
+          onClick={(e) => {
+            e.preventDefault();
+            scrollToSection("home");
+          }}
           style={{
             display: "flex",
             alignItems: "center",
@@ -61,7 +84,6 @@ export default function Navbar() {
                 color: "#0B3C5D",
                 fontSize: "21px",
                 fontWeight: 800,
-                lineHeight: 1.1,
               }}
             >
               Dr. Ishaan Meena
@@ -79,7 +101,6 @@ export default function Navbar() {
           </div>
         </a>
 
-        {/* Desktop Menu */}
         <div
           className="desktop-menu"
           style={{
@@ -88,18 +109,18 @@ export default function Navbar() {
             gap: "10px",
           }}
         >
-          <a href="#home" style={navLink}>Home</a>
+          <a onClick={() => scrollToSection("home")} style={navLink}>Home</a>
 
-          <a href="#about" style={navLink}>About</a>
+          <a onClick={() => scrollToSection("about")} style={navLink}>About</a>
 
-          <a href="#services" style={navLink}>Services</a>
+          <a onClick={() => scrollToSection("services")} style={navLink}>Services</a>
 
-          <a href="#reviews" style={navLink}>Reviews</a>
+          <a onClick={() => scrollToSection("reviews")} style={navLink}>Reviews</a>
 
-          <a href="#contact" style={navLink}>Contact</a>
+          <a onClick={() => scrollToSection("contact")} style={navLink}>Contact</a>
 
           <a
-            href="#appointment"
+            onClick={() => scrollToSection("appointment")}
             style={{
               background: "#D4AF37",
               color: "#fff",
@@ -107,15 +128,16 @@ export default function Navbar() {
               borderRadius: "12px",
               textDecoration: "none",
               fontWeight: 700,
+              cursor: "pointer",
             }}
           >
             Book Appointment
           </a>
         </div>
 
-        {/* Mobile Menu Button */}
         <button
           onClick={() => setMenuOpen(!menuOpen)}
+          className="menu-btn"
           style={{
             background: "transparent",
             border: "none",
@@ -124,7 +146,6 @@ export default function Navbar() {
             color: "#0B3C5D",
             display: "none",
           }}
-          className="menu-btn"
         >
           ☰
         </button>
@@ -146,18 +167,18 @@ export default function Navbar() {
             zIndex: 9998,
           }}
         >
-          <a href="#home" style={{ ...navLink, display: "block" }}>Home</a>
+          <a onClick={() => scrollToSection("home")} style={{ ...navLink, display: "block" }}>Home</a>
 
-          <a href="#about" style={{ ...navLink, display: "block" }}>About</a>
+          <a onClick={() => scrollToSection("about")} style={{ ...navLink, display: "block" }}>About</a>
 
-          <a href="#services" style={{ ...navLink, display: "block" }}>Services</a>
+          <a onClick={() => scrollToSection("services")} style={{ ...navLink, display: "block" }}>Services</a>
 
-          <a href="#reviews" style={{ ...navLink, display: "block" }}>Reviews</a>
+          <a onClick={() => scrollToSection("reviews")} style={{ ...navLink, display: "block" }}>Reviews</a>
 
-          <a href="#contact" style={{ ...navLink, display: "block" }}>Contact</a>
+          <a onClick={() => scrollToSection("contact")} style={{ ...navLink, display: "block" }}>Contact</a>
 
           <a
-            href="#appointment"
+            onClick={() => scrollToSection("appointment")}
             style={{
               display: "block",
               marginTop: "12px",
@@ -168,6 +189,7 @@ export default function Navbar() {
               borderRadius: "12px",
               textDecoration: "none",
               fontWeight: 700,
+              cursor: "pointer",
             }}
           >
             Book Appointment
@@ -176,10 +198,6 @@ export default function Navbar() {
       )}
 
       <style jsx>{`
-        html {
-          scroll-behavior: smooth;
-        }
-
         @media (max-width: 900px) {
           .desktop-menu {
             display: none !important;
@@ -187,10 +205,6 @@ export default function Navbar() {
 
           .menu-btn {
             display: block !important;
-          }
-
-          nav {
-            padding: 10px 16px !important;
           }
         }
 
