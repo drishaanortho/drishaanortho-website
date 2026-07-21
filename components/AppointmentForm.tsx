@@ -25,6 +25,7 @@ Problem: ${problem}`;
 
   return (
     <section
+      id="appointment"
       style={{
         padding: "60px 20px",
         background: "#f4f8fc",
