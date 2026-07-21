@@ -8,6 +8,7 @@ import Navbar from "../components/Navbar";
 import GoogleReviews from "../components/GoogleReviews";
 import StickyContactBar from "../components/StickyContactBar";
 import FAQ from "../components/FAQ";
+import AppointmentForm from "../components/AppointmentForm";
 export default function Home() {
   
   return (
@@ -126,6 +127,7 @@ export default function Home() {
   
 </div>
 <FAQ />
+      <AppointmentForm />
       <section
         id="contact"
         style={{
