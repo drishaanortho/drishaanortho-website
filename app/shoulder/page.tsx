@@ -1,3 +1,4 @@
+import ShoulderConditions from "../../components/ShoulderConditions";
 export default function ShoulderPage() {
   return (
     <main style={{ fontFamily: "Arial, sans-serif", color: "#333" }}>
@@ -53,6 +54,7 @@ export default function ShoulderPage() {
           shoulder reconstruction whenever required.
         </p>
       </section>
+      <ShoulderConditions />
     </main>
   );
 }
