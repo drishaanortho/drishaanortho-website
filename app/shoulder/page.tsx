@@ -1,3 +1,4 @@
+import ShoulderTreatment from "../../components/ShoulderTreatment";
 import ShoulderSymptoms from "../../components/ShoulderSymptoms";
 import ShoulderConditions from "../../components/ShoulderConditions";
 export default function ShoulderPage() {
@@ -57,6 +58,7 @@ export default function ShoulderPage() {
       </section>
       <ShoulderConditions />
       <ShoulderSymptoms />
+      <ShoulderTreatment />
     </main>
   );
 }
