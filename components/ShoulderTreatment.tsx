@@ -28,8 +28,8 @@ export default function ShoulderTreatment() {
       >
         Treatment Options
       </h2>
-
-      <p
+      
+       <p
         style={{
           textAlign: "center",
           color: "#666",
