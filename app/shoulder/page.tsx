@@ -1,3 +1,4 @@
+import ShoulderFAQ from "../../components/ShoulderFAQ";
 import WhyChooseShoulder from "../../components/WhyChooseShoulder";
 import ShoulderConsult from "../../components/ShoulderConsult";
 import ShoulderTreatment from "../../components/ShoulderTreatment";
@@ -63,6 +64,7 @@ export default function ShoulderPage() {
       <ShoulderTreatment />
       <ShoulderConsult />
       <WhyChooseShoulder />
+      <ShoulderFAQ />
     </main>
   );
 }
