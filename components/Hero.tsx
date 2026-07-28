@@ -28,7 +28,7 @@ export default function Hero() {
             marginBottom: "10px",
           }}
         >
-          ORTHOPAEDIC & SHOULDER SURGEON
+          ORTHOPAEDIC SURGEON
         </p>
 
         <h1
