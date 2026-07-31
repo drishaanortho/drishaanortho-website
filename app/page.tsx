@@ -1,3 +1,4 @@
+import Contact from "../components/Contact";
 import Hero from "../components/Hero";
 import About from "../components/About";
 import WhyChooseUs from "../components/WhyChooseUs";
@@ -154,94 +155,7 @@ export default function Home() {
 </div>
 <FAQ />
       <AppointmentForm />
-      <section
-        id="contact"
-        style={{
-          backgroundColor: "#0B3C5D",
-          color: "white",
-          textAlign: "center",
-          padding: "60px 20px",
-        }}
-      >
-        <h2
-  style={{
-    fontSize: "42px",
-    marginBottom: "15px",
-    fontWeight: "700",
-  }}
->
-  Contact Us
-</h2>
-
-<p
-  style={{
-    fontSize: "20px",
-    color: "#D9EAF7",
-    marginBottom: "40px",
-  }}
->
-  We're here to help you. Reach out or visit our clinic.
-</p>
-
-        <p style={{ fontSize: "20px", lineHeight: "36px" }}>
-          📍 Shiv Enclave Apartments, Near Ajmer Hospital & Savitri School,
-          Civil Lines, Ajmer
-        </p>
-
-        <a
-          href="https://maps.app.goo.gl/qjg22wTr6N7DtpS69"
-          target="_blank"
-          rel="noopener noreferrer"
-          style={{
-            display: "inline-block",
-            marginTop: "15px",
-            marginBottom: "20px",
-            backgroundColor: "white",
-            color: "#0B3C5D",
-            padding: "12px 24px",
-            borderRadius: "10px",
-            textDecoration: "none",
-            fontWeight: "bold",
-          }}
-        >
-          🗺️ Get Directions
-        </a>
-        <a
-  href="https://wa.me/917023562036"
-  target="_blank"
-  rel="noopener noreferrer"
-  style={{
-    display: "inline-block",
-    marginLeft: "15px",
-    marginTop: "15px",
-    marginBottom: "20px",
-    backgroundColor: "#25D366",
-    color: "white",
-    padding: "12px 24px",
-    borderRadius: "10px",
-    textDecoration: "none",
-    fontWeight: "bold",
-  }}
->
-  💬 WhatsApp
-</a>
-
-        <p style={{ fontSize: "20px" }}>
-  <a
-    href="tel:+917023562036"
-    style={{ color: "white", textDecoration: "none" }}
-  >
-    📞 +91 70235 62036
-  </a>
-</p>
-        <p style={{ fontSize: "20px" }}>🕒 3:00 PM – 8:00 PM (Every Day)</p>
-
-        <p style={{ fontSize: "20px" }}>
-          ✉️ <a href="mailto:dr.ishaanmeena@gmail.com" style={{ color: "white" }}>
-            dr.ishaanmeena@gmail.com
-          </a>
-        </p>
-      </section>
+      <Contact />
       <div
   style={{
     marginTop: "40px",
