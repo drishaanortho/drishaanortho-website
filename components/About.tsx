@@ -1,133 +1,31 @@
 export default function About() {
   return (
-    <section
-      id="about"
-      style={{
-        maxWidth: "1100px",
-        margin: "50px auto",
-        padding: "50px 25px",
-        background: "#F8FBFF",
-        borderRadius: "30px",
-      }}
-    >
-      <h2
-        style={{
-          color: "#0B3C5D",
-          fontSize: "40px",
-          fontWeight: "800",
-          textAlign: "center",
-          marginBottom: "10px",
-        }}
-      >
-        About Dr. Ishaan Meena
-      </h2>
-
-      <div
-        style={{
-          width: "90px",
-          height: "5px",
-          background: "#25D366",
-          borderRadius: "50px",
-          margin: "0 auto 35px",
-        }}
-      />
-
-      <p
-  style={{
-    fontSize: "20px",
-    lineHeight: "42px",
-    color: "#444",
-    textAlign: "center",
-    maxWidth: "700px",
-    margin: "0 auto 50px",
-  }}
->
-        Dr. Ishaan Meena is a dedicated <strong>Orthopedic Surgeon</strong> and
-        <strong> Assistant Professor</strong> at Jawaharlal Nehru Medical
-        College, Ajmer. He completed his <strong>MBBS</strong>,
-        <strong> MS (Orthopaedics)</strong> and
-        <strong> Fellowship in Advanced Shoulder Surgery</strong>. He provides
-        expert care for fractures, trauma, shoulder disorders, arthroscopy,
-        sports injuries, joint replacement, spine disorders and complex
-        orthopedic conditions with a patient-centered, evidence-based approach.
-      </p>
-
-      <div
-        style={{
-          display: "grid",
-          gridTemplateColumns: "repeat(auto-fit, minmax(240px,1fr))",
-          gap: "22px",
-          marginTop: "45px",
-        }}
-      >
-        <div
-          style={{
-            background: "#fff",
-            padding: "35px 28px",
-            borderRadius: "22px",
-            boxShadow: "0 12px 30px rgba(0,0,0,0.08)",
-            borderTop: "5px solid #25D366",
-            textAlign: "center",
-          }}
-        >
-          <div style={{ fontSize: "42px" }}>🏥</div>
-          <h3 style={{ color: "#0B3C5D" }}>Assistant Professor</h3>
-          <p style={{ color: "#666" }}>
-            Jawaharlal Nehru Medical College, Ajmer
-          </p>
+    <section id="about" style={{maxWidth:"1200px",margin:"70px auto",padding:"70px 30px",background:"#fff",borderRadius:"30px"}}>
+      <div style={{display:"grid",gridTemplateColumns:"repeat(auto-fit,minmax(340px,1fr))",gap:"50px",alignItems:"center"}}>
+        <div style={{textAlign:"center"}}>
+          <img src="/dr-ishaan.jpg" alt="Dr. Ishaan Meena" style={{width:"100%",maxWidth:"420px",borderRadius:"28px",boxShadow:"0 25px 60px rgba(11,60,93,.18)",border:"8px solid white"}} />
         </div>
-
-        <div
-          style={{
-            background: "#fff",
-            padding: "35px 28px",
-            borderRadius: "22px",
-            boxShadow: "0 12px 30px rgba(0,0,0,0.08)",
-            borderTop: "5px solid #25D366",
-            textAlign: "center",
-          }}
-        >
-          <div style={{ fontSize: "42px" }}>🎓</div>
-          <h3 style={{ color: "#0B3C5D" }}>MS (Orthopaedics)</h3>
-          <p style={{ color: "#666" }}>
-            Postgraduate Qualification in Orthopaedics
+        <div>
+          <p style={{color:"#1976D2",fontWeight:700,letterSpacing:"2px",marginBottom:"12px"}}>ABOUT DR. ISHAAN MEENA</p>
+          <h2 style={{fontSize:"44px",color:"#0B3C5D",margin:0}}>Trusted Orthopaedic Care</h2>
+          <p style={{marginTop:"24px",lineHeight:"32px",color:"#555",fontSize:"18px"}}>
+            Dr. Ishaan Meena is an Orthopaedic Surgeon and Assistant Professor in the Department of Orthopaedics, Jawaharlal Nehru Medical College, Ajmer. He completed MBBS, MS (Orthopaedics) and Fellowship in Advanced Shoulder Surgery. His practice focuses on evidence-based, patient-centred care for trauma, shoulder disorders, sports injuries, arthroscopy, joint replacement and spine conditions.
           </p>
-        </div>
-
-        <div
-          style={{
-            background: "#fff",
-            padding: "35px 28px",
-            borderRadius: "22px",
-            boxShadow: "0 12px 30px rgba(0,0,0,0.08)",
-            borderTop: "5px solid #25D366",
-            textAlign: "center",
-          }}
-        >
-          <div style={{ fontSize: "42px" }}>🦴</div>
-          <h3 style={{ color: "#0B3C5D" }}>
-            Fellowship in Advanced Shoulder Surgery
-          </h3>
-          <p style={{ color: "#666" }}>
-            Specialized training in advanced shoulder procedures
-          </p>
-        </div>
-
-        <div
-          style={{
-            background: "#fff",
-            padding: "35px 28px",
-            borderRadius: "22px",
-            boxShadow: "0 12px 30px rgba(0,0,0,0.08)",
-            borderTop: "5px solid #25D366",
-            textAlign: "center",
-          }}
-        >
-          <div style={{ fontSize: "42px" }}>⭐</div>
-          <h3 style={{ color: "#0B3C5D" }}>Experience</h3>
-          <p style={{ color: "#666" }}>
-            5+ Years of Clinical Experience & Thousands of Patients Treated
-          </p>
+          <div style={{marginTop:"28px"}}>
+            <p><strong>Qualifications</strong></p>
+            <p>• MBBS</p>
+            <p>• MS (Orthopaedics)</p>
+            <p>• Fellowship in Advanced Shoulder Surgery</p>
+          </div>
+          <div style={{marginTop:"24px"}}>
+            <p><strong>Areas of Expertise</strong></p>
+            <div style={{display:"flex",flexWrap:"wrap",gap:"12px",marginTop:"12px"}}>
+              {["Shoulder Surgery","Sports Injuries","Arthroscopy","Joint Replacement","Trauma Care","Spine Disorders"].map((item)=>(
+                <span key={item} style={{background:"#EEF6FF",color:"#0B3C5D",padding:"10px 16px",borderRadius:"999px",fontWeight:600}}>{item}</span>
+              ))}
+            </div>
+          </div>
+          <a href="#contact" style={{display:"inline-block",marginTop:"35px",background:"#0B3C5D",color:"white",padding:"14px 28px",borderRadius:"999px",textDecoration:"none",fontWeight:700}}>Book Consultation</a>
         </div>
       </div>
     </section>
