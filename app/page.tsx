@@ -1,4 +1,3 @@
-import Contact from "../components/Contact";
 import Hero from "../components/Hero";
 import About from "../components/About";
 import WhyChooseUs from "../components/WhyChooseUs";
@@ -12,6 +11,7 @@ import GoogleReviews from "../components/GoogleReviews";
 import StickyContactBar from "../components/StickyContactBar";
 import FAQ from "../components/FAQ";
 import AppointmentForm from "../components/AppointmentForm";
+import Contact from "../components/Contact";
 export default function Home() {
   const jsonLd = {
   "@context": "https://schema.org",
