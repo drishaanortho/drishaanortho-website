@@ -75,15 +75,15 @@ export default function Navbar() {
           <Image
             src="/logo.png"
             alt="Logo"
-            width={64}
-            height={64}
+            width={48}
+            height={48}
           />
 
           <div>
             <div
               style={{
                 color: "#0B3C5D",
-                fontSize: "24px",
+                fontSize: "18px",
                 fontWeight: 900,
                 letterSpacing: "-0.5px",
               }}
@@ -94,7 +94,7 @@ export default function Navbar() {
             <div
               style={{
                 color: "#666",
-                fontSize: "13px",
+                fontSize: "11px",
                 fontWeight: 700,
                 letterSpacing: "0.4px",
               }}
@@ -139,7 +139,7 @@ export default function Navbar() {
               boxShadow:
                 "0 10px 25px rgba(212,175,55,.35)",
               color: "#fff",
-              padding: "14px 24px",
+              padding: "10px 18px",
               borderRadius: "12px",
               textDecoration: "none",
               fontWeight: 700,
