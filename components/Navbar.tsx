@@ -27,8 +27,9 @@ export default function Navbar() {
   const navLink = {
     textDecoration: "none",
     color: "#0B3C5D",
-    fontWeight: 700,
+    fontWeight: 800,
     fontSize: "16px",
+    letterSpacing: "0.2px",
     padding: "10px 14px",
     borderRadius: "10px",
     transition: "0.3s",
@@ -44,15 +45,15 @@ export default function Navbar() {
           left: "50%",
           transform: "translateX(-50%)",
           width: "95%",
-          maxWidth: "1200px",
+          maxWidth: "1250px",
           zIndex: 9999,
-          background: "rgba(255,255,255,0.82)",
-          backdropFilter: "blur(16px)",
-          WebkitBackdropFilter: "blur(16px)",
-          borderRadius: "18px",
+          background: "rgba(255,255,255,0.90)",
+          backdropFilter: "blur(20px)",
+          WebkitBackdropFilter: "blur(20px)",
+          borderRadius: "22px",
           border: "1px solid rgba(255,255,255,.35)",
-          boxShadow: "0 10px 35px rgba(0,0,0,.12)",
-          padding: "12px 18px",
+          boxShadow: "0 18px 45px rgba(0,0,0,.12)",
+          padding: "16px 24px",
           display: "flex",
           justifyContent: "space-between",
           alignItems: "center",
@@ -67,23 +68,24 @@ export default function Navbar() {
           style={{
             display: "flex",
             alignItems: "center",
-            gap: "12px",
+            gap: "16px",
             textDecoration: "none",
           }}
         >
           <Image
             src="/logo.png"
             alt="Logo"
-            width={52}
-            height={52}
+            width={64}
+            height={64}
           />
 
           <div>
             <div
               style={{
                 color: "#0B3C5D",
-                fontSize: "21px",
-                fontWeight: 800,
+                fontSize: "24px",
+                fontWeight: 900,
+                letterSpacing: "-0.5px",
               }}
             >
               Dr. Ishaan Meena
@@ -92,39 +94,52 @@ export default function Navbar() {
             <div
               style={{
                 color: "#666",
-                fontSize: "12px",
-                fontWeight: 600,
+                fontSize: "13px",
+                fontWeight: 700,
+                letterSpacing: "0.4px",
               }}
             >
-              Orthopaedic Clinic
+              Orthopaedic Surgeon
             </div>
           </div>
         </a>
-
-        <div
+                <div
           className="desktop-menu"
           style={{
             display: "flex",
             alignItems: "center",
-            gap: "10px",
+            gap: "18px",
           }}
         >
-          <a onClick={() => scrollToSection("home")} style={navLink}>Home</a>
+          <a onClick={() => scrollToSection("home")} style={navLink}>
+            Home
+          </a>
 
-          <a onClick={() => scrollToSection("about")} style={navLink}>About</a>
+          <a onClick={() => scrollToSection("about")} style={navLink}>
+            About
+          </a>
 
-          <a onClick={() => scrollToSection("services")} style={navLink}>Services</a>
+          <a onClick={() => scrollToSection("services")} style={navLink}>
+            Services
+          </a>
 
-          <a onClick={() => scrollToSection("reviews")} style={navLink}>Reviews</a>
+          <a onClick={() => scrollToSection("reviews")} style={navLink}>
+            Reviews
+          </a>
 
-          <a onClick={() => scrollToSection("contact")} style={navLink}>Contact</a>
+          <a onClick={() => scrollToSection("contact")} style={navLink}>
+            Contact
+          </a>
 
           <a
             onClick={() => scrollToSection("appointment")}
             style={{
-              background: "#D4AF37",
+              background:
+                "linear-gradient(135deg,#D4AF37,#C69A1B)",
+              boxShadow:
+                "0 10px 25px rgba(212,175,55,.35)",
               color: "#fff",
-              padding: "12px 18px",
+              padding: "14px 24px",
               borderRadius: "12px",
               textDecoration: "none",
               fontWeight: 700,
@@ -150,8 +165,7 @@ export default function Navbar() {
           ☰
         </button>
       </nav>
-
-      {menuOpen && (
+            {menuOpen && (
         <div
           style={{
             position: "fixed",
@@ -167,15 +181,40 @@ export default function Navbar() {
             zIndex: 9998,
           }}
         >
-          <a onClick={() => scrollToSection("home")} style={{ ...navLink, display: "block" }}>Home</a>
+          <a
+            onClick={() => scrollToSection("home")}
+            style={{ ...navLink, display: "block" }}
+          >
+            Home
+          </a>
 
-          <a onClick={() => scrollToSection("about")} style={{ ...navLink, display: "block" }}>About</a>
+          <a
+            onClick={() => scrollToSection("about")}
+            style={{ ...navLink, display: "block" }}
+          >
+            About
+          </a>
 
-          <a onClick={() => scrollToSection("services")} style={{ ...navLink, display: "block" }}>Services</a>
+          <a
+            onClick={() => scrollToSection("services")}
+            style={{ ...navLink, display: "block" }}
+          >
+            Services
+          </a>
 
-          <a onClick={() => scrollToSection("reviews")} style={{ ...navLink, display: "block" }}>Reviews</a>
+          <a
+            onClick={() => scrollToSection("reviews")}
+            style={{ ...navLink, display: "block" }}
+          >
+            Reviews
+          </a>
 
-          <a onClick={() => scrollToSection("contact")} style={{ ...navLink, display: "block" }}>Contact</a>
+          <a
+            onClick={() => scrollToSection("contact")}
+            style={{ ...navLink, display: "block" }}
+          >
+            Contact
+          </a>
 
           <a
             onClick={() => scrollToSection("appointment")}
@@ -183,9 +222,10 @@ export default function Navbar() {
               display: "block",
               marginTop: "12px",
               textAlign: "center",
-              background: "#D4AF37",
+              background: "linear-gradient(135deg,#D4AF37,#C69A1B)",
+              boxShadow: "0 10px 25px rgba(212,175,55,.35)",
               color: "#fff",
-              padding: "14px",
+              padding: "14px 24px",
               borderRadius: "12px",
               textDecoration: "none",
               fontWeight: 700,
@@ -196,8 +236,7 @@ export default function Navbar() {
           </a>
         </div>
       )}
-
-      <style jsx>{`
+            <style jsx>{`
         @media (max-width: 900px) {
           .desktop-menu {
             display: none !important;
@@ -214,8 +253,13 @@ export default function Navbar() {
           }
         }
 
+        a {
+          transition: all 0.3s ease;
+        }
+
         a:hover {
-          opacity: 0.85;
+          opacity: 0.9;
+          transform: translateY(-1px);
         }
       `}</style>
     </>
