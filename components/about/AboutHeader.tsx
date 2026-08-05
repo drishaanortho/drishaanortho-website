@@ -4,32 +4,34 @@ export default function AboutHeader() {
       style={{
         display: "grid",
         gridTemplateColumns: "repeat(auto-fit,minmax(340px,1fr))",
-        gap: "60px",
+        gap: "70px",
         alignItems: "center",
       }}
     >
+      {/* Doctor Image */}
       <div style={{ textAlign: "center" }}>
         <img
           src="/dr-ishaan.jpg"
           alt="Dr Ishaan Meena"
           style={{
             width: "100%",
-            maxWidth: "430px",
-            borderRadius: "28px",
-            boxShadow: "0 30px 70px rgba(11,60,93,.15)",
-            border: "8px solid white",
+            maxWidth: "470px",
+            borderRadius: "30px",
+            border: "10px solid white",
+            boxShadow: "0 35px 80px rgba(11,60,93,0.22)",
           }}
         />
       </div>
 
+      {/* Content */}
       <div>
         <p
           style={{
             color: "#1976D2",
             fontWeight: 700,
             letterSpacing: "2px",
-            marginBottom: "12px",
             textTransform: "uppercase",
+            marginBottom: "12px",
           }}
         >
           Meet Your Orthopaedic Specialist
@@ -37,10 +39,11 @@ export default function AboutHeader() {
 
         <h2
           style={{
-            fontSize: "48px",
+            fontSize: "52px",
             color: "#0B3C5D",
             margin: 0,
-            lineHeight: "1.2",
+            lineHeight: "1.15",
+            fontWeight: 800,
           }}
         >
           Dr. Ishaan Meena
@@ -48,24 +51,39 @@ export default function AboutHeader() {
 
         <h3
           style={{
-            marginTop: "14px",
+            marginTop: "16px",
             color: "#1976D2",
             fontWeight: 600,
+            fontSize: "28px",
           }}
         >
-          Orthopaedic Surgeon
+          Orthopaedic & Shoulder Surgeon
         </h3>
 
         <p
           style={{
-            marginTop: "22px",
+            color: "#D4AF37",
+            fontWeight: 700,
+            marginTop: "12px",
+            marginBottom: "24px",
+            fontSize: "18px",
+          }}
+        >
+          MS (Orthopaedics) • Fellowship in Advanced Shoulder Surgery
+        </p>
+
+        <p
+          style={{
             fontSize: "18px",
             color: "#555",
             lineHeight: "34px",
+            marginBottom: "18px",
           }}
         >
           Assistant Professor, Department of Orthopaedics,
-          Jawaharlal Nehru Medical College, Ajmer.
+          Jawaharlal Nehru Medical College, Ajmer. Dedicated to
+          delivering ethical, evidence-based orthopaedic care with a
+          patient-first approach.
         </p>
 
         <p
@@ -75,9 +93,12 @@ export default function AboutHeader() {
             lineHeight: "34px",
           }}
         >
-          Dedicated to evidence-based orthopaedic care with
-          expertise in trauma, shoulder surgery, arthroscopy,
-          sports injuries, joint replacement and spine disorders.
+          Special interests include trauma surgery, fracture
+          management, shoulder surgery, arthroscopy, sports injuries,
+          joint replacement, spine disorders and paediatric
+          orthopaedics. Every treatment plan is tailored to help
+          patients recover safely, regain mobility and return to an
+          active lifestyle.
         </p>
       </div>
     </div>
