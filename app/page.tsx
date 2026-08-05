@@ -7,7 +7,6 @@ import PatientJourney from "../components/PatientJourney";
 import Testimonials from "../components/Testimonials";
 import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
-import GoogleReviews from "../components/GoogleReviews";
 import StickyContactBar from "../components/StickyContactBar";
 import FAQ from "../components/FAQ";
 import AppointmentForm from "../components/AppointmentForm";
@@ -49,7 +48,6 @@ export default function Home() {
       {/* NAVBAR */}
       <Navbar />
 <Hero />
-      <GoogleReviews />
 
 <div id="about">
   <About />
