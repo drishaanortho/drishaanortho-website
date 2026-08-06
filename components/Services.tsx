@@ -2,39 +2,69 @@ export default function Services() {
   const services = [
     {
       icon: "🦴",
-      title: "Fracture & Trauma Care",
-      description:
-        "Comprehensive management of simple, complex and neglected fractures using modern surgical and non-surgical techniques.",
-    },
-    {
-      icon: "🦵",
-      title: "Joint Replacement",
-      description:
-        "Advanced knee and hip replacement surgery focused on pain relief, improved mobility and faster recovery.",
-    },
-    {
-      icon: "🏃",
-      title: "Sports Injury & Arthroscopy",
-      description:
-        "Expert treatment for ACL, meniscus, ligament, cartilage and sports injuries using minimally invasive arthroscopy.",
-    },
-    {
-      icon: "💪",
       title: "Shoulder Surgery",
       description:
-        "Specialized care for rotator cuff tears, shoulder instability, frozen shoulder and recurrent dislocation.",
+        "Advanced treatment for shoulder pain and instability using modern surgical and minimally invasive techniques.",
+      conditions: [
+        "Rotator Cuff Tear",
+        "Frozen Shoulder",
+        "Shoulder Dislocation",
+      ],
     },
     {
-      icon: "🩻",
+      icon: "⚽",
+      title: "Sports Injuries",
+      description:
+        "Comprehensive management of ligament, tendon and sports-related injuries for faster recovery.",
+      conditions: [
+        "ACL Injury",
+        "Meniscus Tear",
+        "Ligament Injury",
+      ],
+    },
+    {
+      icon: "🔬",
+      title: "Arthroscopy",
+      description:
+        "Minimally invasive procedures for accurate diagnosis and treatment of joint disorders.",
+      conditions: [
+        "Knee Arthroscopy",
+        "Shoulder Arthroscopy",
+        "Cartilage Injury",
+      ],
+    },
+    {
+      icon: "🦿",
+      title: "Joint Replacement",
+      description:
+        "Modern hip and knee replacement surgery focused on restoring mobility and reducing pain.",
+      conditions: [
+        "Knee Replacement",
+        "Hip Replacement",
+        "Revision Surgery",
+      ],
+    },
+    {
+      icon: "🚑",
+      title: "Trauma & Fracture Care",
+      description:
+        "Expert management of simple and complex fractures with modern fixation techniques.",
+      conditions: [
+        "Complex Fractures",
+        "Accident Injuries",
+        "Nonunion & Malunion",
+      ],
+    },
+    {
+      icon: "🩺",
       title: "Spine Disorders",
       description:
-        "Evaluation and treatment of neck pain, back pain, disc problems, sciatica and other spinal conditions.",
-    },
-    {
-      icon: "👶",
-      title: "Paediatric Orthopaedics",
-      description:
-        "Management of congenital deformities, CTEV, limb deformities and children's orthopaedic conditions.",
+        "Evaluation and treatment of neck pain, back pain and other spinal conditions.",
+      conditions: [
+        "Neck Pain",
+        "Back Pain",
+        "Sciatica",
+      ],
     },
   ];
 
@@ -42,59 +72,59 @@ export default function Services() {
     <section
       id="services"
       style={{
-        background:
-          "linear-gradient(180deg,#F8FBFF 0%,#FFFFFF 100%)",
-        padding: "90px 20px",
+        background: "#F8FBFF",
+        padding: "100px 20px",
       }}
     >
       <div
         style={{
-          maxWidth: "1200px",
+          maxWidth: "1250px",
           margin: "0 auto",
         }}
       >
         <p
           style={{
-            color: "#1E88E5",
             textAlign: "center",
+            color: "#1976D2",
+            letterSpacing: "3px",
             fontWeight: 700,
-            letterSpacing: "2px",
             marginBottom: "10px",
           }}
         >
-          SPECIALIZED ORTHOPAEDIC CARE
+          EXPERT ORTHOPAEDIC CARE
         </p>
 
         <h2
           style={{
             textAlign: "center",
             color: "#0B3C5D",
-            fontSize: "42px",
+            fontSize: "46px",
             fontWeight: 800,
-            marginBottom: "15px",
+            marginBottom: "18px",
           }}
         >
-          Orthopaedic Services
+          Treatments & Specialities
         </h2>
 
         <p
           style={{
             textAlign: "center",
-            maxWidth: "750px",
+            maxWidth: "760px",
             margin: "0 auto 60px",
             color: "#666",
             lineHeight: "30px",
             fontSize: "18px",
           }}
         >
-          Comprehensive orthopaedic care using evidence-based treatment,
-          modern surgical techniques and personalised rehabilitation.
+          Comprehensive orthopaedic care for fractures, shoulder disorders,
+          sports injuries, joint replacement and spine conditions using
+          evidence-based treatment.
         </p>
 
         <div
           style={{
             display: "grid",
-            gridTemplateColumns: "repeat(auto-fit,minmax(300px,1fr))",
+            gridTemplateColumns: "repeat(auto-fit,minmax(320px,1fr))",
             gap: "30px",
           }}
         >
@@ -105,23 +135,22 @@ export default function Services() {
                 background: "#fff",
                 borderRadius: "24px",
                 padding: "35px",
-                boxShadow: "0 15px 40px rgba(0,0,0,0.08)",
-                border: "1px solid #E8EEF5",
-                transition: "0.3s",
+                boxShadow: "0 15px 35px rgba(0,0,0,.08)",
+                borderTop: "5px solid #1976D2",
               }}
             >
               <div
                 style={{
-                  width: "70px",
-                  height: "70px",
+                  width: "72px",
+                  height: "72px",
                   borderRadius: "18px",
                   background:
-                    "linear-gradient(135deg,#0B3C5D,#1E88E5)",
+                    "linear-gradient(135deg,#0B3C5D,#1976D2)",
                   display: "flex",
                   justifyContent: "center",
                   alignItems: "center",
                   fontSize: "34px",
-                  marginBottom: "25px",
+                  marginBottom: "24px",
                 }}
               >
                 {service.icon}
@@ -130,9 +159,8 @@ export default function Services() {
               <h3
                 style={{
                   color: "#0B3C5D",
-                  fontSize: "24px",
-                  marginBottom: "15px",
-                  fontWeight: 700,
+                  fontSize: "26px",
+                  marginBottom: "16px",
                 }}
               >
                 {service.title}
@@ -140,13 +168,46 @@ export default function Services() {
 
               <p
                 style={{
-                  color: "#666",
+                  color: "#64748B",
                   lineHeight: "30px",
                   fontSize: "17px",
                 }}
               >
                 {service.description}
               </p>
+
+              <div
+                style={{
+                  marginTop: "24px",
+                }}
+              >
+                {service.conditions.map((condition) => (
+                  <div
+                    key={condition}
+                    style={{
+                      marginBottom: "10px",
+                      color: "#0B3C5D",
+                      fontWeight: 600,
+                    }}
+                  >
+                    ✓ {condition}
+                  </div>
+                ))}
+              </div>
+
+              <a
+                href="#contact"
+                style={{
+                  display: "inline-block",
+                  marginTop: "25px",
+                  color: "#1976D2",
+                  fontWeight: 700,
+                  textDecoration: "none",
+                  fontSize: "17px",
+                }}
+              >
+                Learn More →
+              </a>
             </div>
           ))}
         </div>
