@@ -1,24 +1,30 @@
 export default function HeroButtons() {
   return (
-    <div style={{ marginTop: "35px" }}>
+    <div
+      style={{
+        marginTop: "40px",
+      }}
+    >
       <div
         style={{
           display: "flex",
+          gap: "18px",
           flexWrap: "wrap",
-          gap: "15px",
         }}
       >
         <a
           href="https://wa.me/917023562036"
+          target="_blank"
+          rel="noopener noreferrer"
           style={{
-            background: "linear-gradient(135deg,#0B3C5D,#1976D2)",
+            background: "#0B5ED7",
             color: "#fff",
-            padding: "16px 32px",
+            padding: "16px 34px",
             borderRadius: "14px",
             textDecoration: "none",
             fontWeight: 700,
             fontSize: "17px",
-            boxShadow: "0 12px 30px rgba(25,118,210,.25)",
+            boxShadow: "0 10px 25px rgba(11,94,215,.25)",
           }}
         >
           Book Appointment
@@ -29,7 +35,7 @@ export default function HeroButtons() {
           style={{
             background: "#fff",
             color: "#0B3C5D",
-            padding: "16px 32px",
+            padding: "16px 34px",
             borderRadius: "14px",
             textDecoration: "none",
             fontWeight: 700,
@@ -46,54 +52,35 @@ export default function HeroButtons() {
           marginTop: "28px",
           display: "inline-flex",
           alignItems: "center",
-          gap: "10px",
-          background: "#F8FBFF",
-          border: "1px solid #DCEBFA",
-          padding: "12px 18px",
+          gap: "12px",
+          background: "#fff",
+          padding: "14px 22px",
           borderRadius: "999px",
+          boxShadow: "0 8px 25px rgba(0,0,0,.08)",
         }}
       >
         <span style={{ fontSize: "22px" }}>⭐⭐⭐⭐⭐</span>
 
-        <span
-          style={{
-            color: "#0B3C5D",
-            fontWeight: 700,
-          }}
-        >
-          5.0 Google Rating
-        </span>
-      </div>
-
-      <div
-        style={{
-          marginTop: "28px",
-          display: "flex",
-          flexWrap: "wrap",
-          gap: "12px",
-        }}
-      >
-        {[
-          "Shoulder Surgery",
-          "Arthroscopy",
-          "Joint Replacement",
-          "Trauma Care",
-        ].map((item) => (
-          <span
-            key={item}
+        <div>
+          <div
             style={{
-              background: "#EEF6FF",
               color: "#0B3C5D",
-              padding: "10px 18px",
-              borderRadius: "999px",
-              fontWeight: 600,
-              fontSize: "15px",
-              border: "1px solid #D8E9FA",
+              fontWeight: 700,
+              fontSize: "17px",
             }}
           >
-            ✓ {item}
-          </span>
-        ))}
+            5.0 Google Rating
+          </div>
+
+          <div
+            style={{
+              color: "#64748B",
+              fontSize: "14px",
+            }}
+          >
+            Trusted by 100+ Patients
+          </div>
+        </div>
       </div>
     </div>
   );
