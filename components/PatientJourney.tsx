@@ -1,47 +1,47 @@
 export default function PatientJourney() {
-  const steps = [
+  const journey = [
     {
+      step: "01",
       icon: "📅",
       title: "Book Appointment",
-      text:
-        "Schedule your consultation by phone, WhatsApp or online at your convenience.",
+      text: "Schedule your consultation online, by phone or through WhatsApp.",
     },
     {
+      step: "02",
       icon: "🩺",
-      title: "Comprehensive Evaluation",
-      text:
-        "Detailed clinical examination with review of your medical history and symptoms.",
+      title: "Clinical Evaluation",
+      text: "Detailed history, physical examination and assessment of your condition.",
     },
     {
-      icon: "📋",
+      step: "03",
+      icon: "🩻",
       title: "Accurate Diagnosis",
-      text:
-        "Digital X-rays, MRI, CT scan and other investigations whenever required for precise diagnosis.",
+      text: "Digital X-rays, MRI and other investigations whenever required.",
     },
     {
+      step: "04",
       icon: "💊",
-      title: "Personalised Treatment",
-      text:
-        "Individual treatment plans including medications, physiotherapy, injections or surgery when indicated.",
+      title: "Personalized Treatment",
+      text: "Individualized treatment plan with non-operative or surgical care.",
     },
     {
-      icon: "❤️",
+      step: "05",
+      icon: "💪",
       title: "Recovery & Follow-up",
-      text:
-        "Guided rehabilitation and regular follow-up to help you return safely to your daily activities.",
+      text: "Rehabilitation, regular follow-up and guidance for complete recovery.",
     },
   ];
 
   return (
     <section
       style={{
-        background: "#ffffff",
-        padding: "90px 20px",
+        background: "#F8FBFF",
+        padding: "100px 20px",
       }}
     >
       <div
         style={{
-          maxWidth: "1200px",
+          maxWidth: "1250px",
           margin: "0 auto",
         }}
       >
@@ -49,25 +49,24 @@ export default function PatientJourney() {
           style={{
             textAlign: "center",
             color: "#1976D2",
-            letterSpacing: "2px",
             fontWeight: 700,
+            letterSpacing: "3px",
             marginBottom: "10px",
-            textTransform: "uppercase",
           }}
         >
-          YOUR JOURNEY
+          YOUR TREATMENT JOURNEY
         </p>
 
         <h2
           style={{
             textAlign: "center",
             color: "#0B3C5D",
-            fontSize: "42px",
+            fontSize: "46px",
             fontWeight: 800,
             marginBottom: "18px",
           }}
         >
-          Your Treatment Journey
+          From Consultation to Recovery
         </h2>
 
         <p
@@ -75,69 +74,71 @@ export default function PatientJourney() {
             textAlign: "center",
             maxWidth: "760px",
             margin: "0 auto 60px",
-            color: "#64748B",
+            color: "#666",
+            lineHeight: "30px",
             fontSize: "18px",
-            lineHeight: "32px",
           }}
         >
-          Every patient receives a structured, evidence-based treatment plan designed to achieve the best possible outcome.
+          We guide every patient through a structured treatment process focused
+          on accurate diagnosis, effective treatment and complete recovery.
         </p>
 
         <div
           style={{
             display: "grid",
             gridTemplateColumns: "repeat(auto-fit,minmax(220px,1fr))",
-            gap: "30px",
+            gap: "25px",
           }}
         >
-          {steps.map((step, index) => (
+          {journey.map((item) => (
             <div
-              key={step.title}
+              key={item.step}
               style={{
                 background: "#fff",
                 borderRadius: "24px",
                 padding: "35px",
-                boxShadow: "0 15px 35px rgba(0,0,0,.08)",
-                borderTop: "5px solid #D4AF37",
                 textAlign: "center",
+                boxShadow: "0 15px 35px rgba(0,0,0,.08)",
+                position: "relative",
               }}
             >
               <div
                 style={{
-                  width: "72px",
-                  height: "72px",
-                  margin: "0 auto 22px",
-                  borderRadius: "18px",
-                  background:
-                    "linear-gradient(135deg,#0B3C5D,#1976D2)",
-                  display: "flex",
-                  justifyContent: "center",
-                  alignItems: "center",
-                  fontSize: "34px",
-                  color: "#fff",
+                  position: "absolute",
+                  top: "20px",
+                  right: "20px",
+                  color: "#D4AF37",
+                  fontWeight: 800,
+                  fontSize: "22px",
                 }}
               >
-                {step.icon}
+                {item.step}
               </div>
 
               <div
                 style={{
-                  color: "#D4AF37",
-                  fontWeight: 700,
-                  marginBottom: "12px",
+                  width: "72px",
+                  height: "72px",
+                  borderRadius: "18px",
+                  background: "linear-gradient(135deg,#0B3C5D,#1976D2)",
+                  display: "flex",
+                  justifyContent: "center",
+                  alignItems: "center",
+                  fontSize: "34px",
+                  margin: "0 auto 22px",
                 }}
               >
-                STEP {index + 1}
+                {item.icon}
               </div>
 
               <h3
                 style={{
                   color: "#0B3C5D",
-                  fontSize: "22px",
-                  marginBottom: "16px",
+                  fontSize: "24px",
+                  marginBottom: "15px",
                 }}
               >
-                {step.title}
+                {item.title}
               </h3>
 
               <p
@@ -145,10 +146,9 @@ export default function PatientJourney() {
                   color: "#64748B",
                   lineHeight: "30px",
                   fontSize: "17px",
-                  margin: 0,
                 }}
               >
-                {step.text}
+                {item.text}
               </p>
             </div>
           ))}
