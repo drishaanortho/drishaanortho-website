@@ -4,83 +4,95 @@ export default function WhyChooseUs() {
       icon: "🎓",
       title: "Fellowship Trained",
       description:
-        "Advanced fellowship training in shoulder surgery, arthroscopy and complex shoulder reconstruction.",
+        "Advanced fellowship training in Shoulder Surgery with expertise in modern orthopaedic techniques.",
     },
     {
       icon: "🏥",
       title: "Academic Excellence",
       description:
-        "Assistant Professor, Department of Orthopaedics, Jawaharlal Nehru Medical College, Ajmer.",
+        "Assistant Professor, Department of Orthopaedics, JLN Medical College, Ajmer.",
     },
     {
       icon: "🦴",
-      title: "Comprehensive Expertise",
+      title: "Advanced Surgical Care",
       description:
-        "Specialized care in trauma, fractures, shoulder surgery, sports injuries, joint replacement and spine disorders.",
+        "Specialized care in shoulder surgery, arthroscopy, trauma and joint replacement.",
     },
     {
-      icon: "🤝",
-      title: "Patient-First Care",
+      icon: "⭐",
+      title: "Patient-Centred Care",
       description:
-        "Every treatment plan is personalized with ethical, evidence-based care and long-term recovery in mind.",
+        "Every patient receives a personalized treatment plan focused on the best possible outcome.",
+    },
+    {
+      icon: "🚑",
+      title: "Emergency Trauma Care",
+      description:
+        "Prompt evaluation and treatment for fractures, accident injuries and orthopaedic emergencies.",
+    },
+    {
+      icon: "📚",
+      title: "Evidence-Based Practice",
+      description:
+        "Modern treatment based on current research, clinical guidelines and proven surgical techniques.",
     },
   ];
 
   return (
     <section
       style={{
-        padding: "90px 20px",
-        background: "#F8FBFF",
+        background: "#FFFFFF",
+        padding: "100px 20px",
       }}
     >
       <div
         style={{
-          maxWidth: "1200px",
+          maxWidth: "1250px",
           margin: "0 auto",
-          textAlign: "center",
         }}
       >
         <p
           style={{
+            textAlign: "center",
             color: "#1976D2",
-            letterSpacing: "2px",
+            letterSpacing: "3px",
             fontWeight: 700,
             marginBottom: "10px",
-            textTransform: "uppercase",
           }}
         >
-          Why Patients Trust Us
+          WHY CHOOSE DR. ISHAAN MEENA
         </p>
 
         <h2
           style={{
+            textAlign: "center",
             color: "#0B3C5D",
-            fontSize: "42px",
+            fontSize: "46px",
             fontWeight: 800,
             marginBottom: "18px",
           }}
         >
-          Why Choose Dr. Ishaan Meena?
+          Trusted Orthopaedic Care
         </h2>
 
         <p
           style={{
+            textAlign: "center",
             maxWidth: "760px",
             margin: "0 auto 60px",
-            color: "#64748B",
+            color: "#666",
+            lineHeight: "30px",
             fontSize: "18px",
-            lineHeight: "32px",
           }}
         >
-          Combining advanced surgical expertise, academic excellence and
-          compassionate patient care to deliver the best possible orthopaedic
-          outcomes.
+          Combining clinical expertise, advanced surgical training and
+          compassionate patient care to deliver the best orthopaedic outcomes.
         </p>
 
         <div
           style={{
             display: "grid",
-            gridTemplateColumns: "repeat(auto-fit,minmax(260px,1fr))",
+            gridTemplateColumns: "repeat(auto-fit,minmax(320px,1fr))",
             gap: "30px",
           }}
         >
@@ -89,18 +101,16 @@ export default function WhyChooseUs() {
               key={item.title}
               style={{
                 background: "#fff",
-                padding: "35px",
                 borderRadius: "24px",
-                borderTop: "5px solid #D4AF37",
+                padding: "35px",
                 boxShadow: "0 15px 35px rgba(0,0,0,.08)",
-                transition: "0.3s",
+                borderTop: "5px solid #D4AF37",
               }}
             >
               <div
                 style={{
-                  width: "70px",
-                  height: "70px",
-                  margin: "0 auto 22px",
+                  width: "72px",
+                  height: "72px",
                   borderRadius: "18px",
                   background:
                     "linear-gradient(135deg,#0B3C5D,#1976D2)",
@@ -108,6 +118,7 @@ export default function WhyChooseUs() {
                   justifyContent: "center",
                   alignItems: "center",
                   fontSize: "34px",
+                  marginBottom: "22px",
                 }}
               >
                 {item.icon}
@@ -128,7 +139,6 @@ export default function WhyChooseUs() {
                   color: "#64748B",
                   fontSize: "17px",
                   lineHeight: "30px",
-                  margin: 0,
                 }}
               >
                 {item.description}
