@@ -1,35 +1,32 @@
 export default function Testimonials() {
-  const testimonials = [
+  const reviews = [
     {
       name: "Verified Patient",
-      location: "Ajmer",
       review:
         "Dr. Ishaan Meena explained my condition in detail and guided me through every step of my treatment. His approach was professional, caring and reassuring.",
     },
     {
       name: "Patient",
-      location: "Rajasthan",
       review:
         "Excellent experience from consultation to recovery. The staff was supportive and the treatment was well planned. Highly recommended for orthopaedic care.",
     },
     {
       name: "Google Review",
-      location: "Verified",
       review:
-        "Very knowledgeable, humble and approachable doctor. I am extremely satisfied with the treatment and follow-up care.",
+        "Very knowledgeable and humble doctor. I received clear explanations and the treatment helped me recover much faster than expected.",
     },
   ];
 
   return (
     <section
       style={{
-        background: "#ffffff",
-        padding: "90px 20px",
+        background: "#FFFFFF",
+        padding: "100px 20px",
       }}
     >
       <div
         style={{
-          maxWidth: "1200px",
+          maxWidth: "1250px",
           margin: "0 auto",
         }}
       >
@@ -37,9 +34,8 @@ export default function Testimonials() {
           style={{
             textAlign: "center",
             color: "#1976D2",
+            letterSpacing: "3px",
             fontWeight: 700,
-            letterSpacing: "2px",
-            textTransform: "uppercase",
             marginBottom: "10px",
           }}
         >
@@ -50,9 +46,9 @@ export default function Testimonials() {
           style={{
             textAlign: "center",
             color: "#0B3C5D",
-            fontSize: "42px",
+            fontSize: "46px",
             fontWeight: 800,
-            marginBottom: "18px",
+            marginBottom: "15px",
           }}
         >
           What Our Patients Say
@@ -61,17 +57,70 @@ export default function Testimonials() {
         <p
           style={{
             textAlign: "center",
-            color: "#64748B",
-            maxWidth: "760px",
-            margin: "0 auto 60px",
-            lineHeight: "32px",
+            color: "#666",
+            maxWidth: "750px",
+            margin: "0 auto 50px",
+            lineHeight: "30px",
             fontSize: "18px",
           }}
         >
-          Patient satisfaction is our greatest achievement. Every review reflects
-          our commitment to compassionate care and excellent clinical outcomes.
+          Patient satisfaction is our greatest achievement. Every review
+          reflects our commitment to compassionate care and excellent clinical
+          outcomes.
         </p>
 
+        {/* Google Rating Card */}
+        <div
+          style={{
+            background: "#F8FBFF",
+            borderRadius: "24px",
+            padding: "40px",
+            textAlign: "center",
+            boxShadow: "0 12px 30px rgba(0,0,0,.08)",
+            marginBottom: "50px",
+          }}
+        >
+          <div style={{ fontSize: "42px" }}>★★★★★</div>
+
+          <h3
+            style={{
+              color: "#0B3C5D",
+              fontSize: "34px",
+              margin: "15px 0 10px",
+            }}
+          >
+            5.0 Google Rating
+          </h3>
+
+          <p
+            style={{
+              color: "#666",
+              fontSize: "18px",
+              marginBottom: "25px",
+            }}
+          >
+            Trusted by 100+ Happy Patients
+          </p>
+
+          <a
+            href="https://maps.app.goo.gl/TqqUAeKrBJVqVREAA"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{
+              display: "inline-block",
+              background: "#1976D2",
+              color: "#fff",
+              padding: "15px 32px",
+              borderRadius: "12px",
+              textDecoration: "none",
+              fontWeight: 700,
+            }}
+          >
+            View Google Reviews →
+          </a>
+        </div>
+
+        {/* Review Cards */}
         <div
           style={{
             display: "grid",
@@ -79,9 +128,9 @@ export default function Testimonials() {
             gap: "30px",
           }}
         >
-          {testimonials.map((item) => (
+          {reviews.map((review) => (
             <div
-              key={item.review}
+              key={review.name}
               style={{
                 background: "#fff",
                 borderRadius: "24px",
@@ -92,11 +141,12 @@ export default function Testimonials() {
             >
               <div
                 style={{
+                  color: "#FFD700",
                   fontSize: "24px",
-                  marginBottom: "18px",
+                  marginBottom: "15px",
                 }}
               >
-                ⭐⭐⭐⭐⭐
+                ★★★★★
               </div>
 
               <p
@@ -107,65 +157,20 @@ export default function Testimonials() {
                   fontStyle: "italic",
                 }}
               >
-                "{item.review}"
+                "{review.review}"
               </p>
 
-              <div
+              <h4
                 style={{
+                  color: "#0B3C5D",
                   marginTop: "25px",
-                  borderTop: "1px solid #E5E7EB",
-                  paddingTop: "18px",
+                  fontSize: "18px",
                 }}
               >
-                <h3
-                  style={{
-                    color: "#0B3C5D",
-                    margin: 0,
-                    fontSize: "20px",
-                  }}
-                >
-                  {item.name}
-                </h3>
-
-                <p
-                  style={{
-                    color: "#1976D2",
-                    marginTop: "6px",
-                    marginBottom: 0,
-                    fontWeight: 600,
-                  }}
-                >
-                  {item.location}
-                </p>
-              </div>
+                {review.name}
+              </h4>
             </div>
           ))}
-        </div>
-
-        <div
-          style={{
-            textAlign: "center",
-            marginTop: "60px",
-          }}
-        >
-          <a
-            href="https://maps.app.goo.gl/TqqUAeKrBJVqVREAA"
-            target="_blank"
-            rel="noopener noreferrer"
-            style={{
-              display: "inline-block",
-              background: "linear-gradient(135deg,#0B3C5D,#1976D2)",
-              color: "#fff",
-              padding: "16px 34px",
-              borderRadius: "14px",
-              textDecoration: "none",
-              fontWeight: 700,
-              fontSize: "18px",
-              boxShadow: "0 10px 25px rgba(11,60,93,.25)",
-            }}
-          >
-            Read More Google Reviews →
-          </a>
         </div>
       </div>
     </section>
