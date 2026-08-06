@@ -1,3 +1,9 @@
+import {
+  MapPin,
+  Phone,
+  Mail,
+  Clock,
+} from "lucide-react";
 export default function Contact() {
   return (
     <section
@@ -79,9 +85,18 @@ export default function Contact() {
             </h3>
 
             <div style={{ marginBottom: "25px" }}>
-              <strong style={{ color: "#0B3C5D" }}>
-                📍 Clinic Address
-              </strong>
+              <div
+  style={{
+    display: "flex",
+    alignItems: "center",
+    gap: "10px",
+    color: "#0B3C5D",
+    fontWeight: 700,
+  }}
+>
+  <MapPin size={22} color="#1976D2" />
+  Clinic Address
+</div>
 
               <p
                 style={{
@@ -99,9 +114,18 @@ export default function Contact() {
             </div>
 
             <div style={{ marginBottom: "20px" }}>
-              <strong style={{ color: "#0B3C5D" }}>
-                📞 Phone
-              </strong>
+              <div
+  style={{
+    display: "flex",
+    alignItems: "center",
+    gap: "10px",
+    color: "#0B3C5D",
+    fontWeight: 700,
+  }}
+>
+  <Phone size={22} color="#1976D2" />
+  Phone
+</div>
 
               <p style={{ color: "#666" }}>
                 +91 70235 62036
@@ -109,9 +133,18 @@ export default function Contact() {
             </div>
 
             <div style={{ marginBottom: "20px" }}>
-              <strong style={{ color: "#0B3C5D" }}>
-                ✉ Email
-              </strong>
+              <div
+  style={{
+    display: "flex",
+    alignItems: "center",
+    gap: "10px",
+    color: "#0B3C5D",
+    fontWeight: 700,
+  }}
+>
+  <Mail size={22} color="#1976D2" />
+  Email
+</div>
 
               <p style={{ color: "#666" }}>
                 dr.ishaanmeena@gmail.com
@@ -119,9 +152,18 @@ export default function Contact() {
             </div>
 
             <div>
-              <strong style={{ color: "#0B3C5D" }}>
-                🕒 OPD Timings
-              </strong>
+              <div
+  style={{
+    display: "flex",
+    alignItems: "center",
+    gap: "10px",
+    color: "#0B3C5D",
+    fontWeight: 700,
+  }}
+>
+  <Clock size={22} color="#1976D2" />
+  OPD Timings
+</div>
 
               <p style={{ color: "#666" }}>
                 Every Day
@@ -215,7 +257,8 @@ export default function Contact() {
                 marginBottom: "18px",
               }}
             >
-              📞 Call Now
+              <Phone size={20} style={{ marginRight: "8px" }} />
+Call Now
             </a>
 
             <a
@@ -234,7 +277,7 @@ export default function Contact() {
                 marginBottom: "18px",
               }}
             >
-              💬 WhatsApp
+              Message on WhatsApp
             </a>
 
             <a
@@ -252,7 +295,8 @@ export default function Contact() {
                 fontWeight: "700",
               }}
             >
-              🗺 Get Directions
+              <MapPin size={20} style={{ marginRight: "8px" }} />
+Get Directions
             </a>
           </div>
         </div>
