@@ -151,6 +151,43 @@ export default function Contact() {
             >
               Need an Appointment?
             </h3>
+            <div
+  style={{
+    background: "rgba(255,255,255,0.12)",
+    borderRadius: "14px",
+    padding: "15px",
+    marginBottom: "25px",
+    textAlign: "center",
+  }}
+>
+  <div
+    style={{
+      fontSize: "26px",
+      fontWeight: "700",
+    }}
+  >
+    ⭐⭐⭐⭐⭐
+  </div>
+
+  <div
+    style={{
+      fontSize: "20px",
+      fontWeight: "700",
+      marginTop: "8px",
+    }}
+  >
+    5.0 Google Rating
+  </div>
+
+  <div
+    style={{
+      color: "#EAF5FF",
+      marginTop: "6px",
+    }}
+  >
+    Trusted by 100+ Patients
+  </div>
+</div>
 
             <p
               style={{
