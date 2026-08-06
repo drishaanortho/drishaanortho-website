@@ -104,6 +104,7 @@ export default function KneePage() {
             relieve pain, restore mobility and improve
             quality of life.
           </p>
+          </section>
                   {/* Common Knee Conditions */}
 
         <section
@@ -422,4 +423,4 @@ export default function KneePage() {
       <StickyContactBar />
     </>
   );
-      }
+}
