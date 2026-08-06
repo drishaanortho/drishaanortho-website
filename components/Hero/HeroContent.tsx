@@ -3,7 +3,7 @@ export default function HeroContent() {
     <div
       style={{
         flex: 1,
-        minWidth: "320px",
+        minWidth: "340px",
       }}
     >
       <p
@@ -12,19 +12,19 @@ export default function HeroContent() {
           fontWeight: 700,
           letterSpacing: "3px",
           textTransform: "uppercase",
-          marginBottom: "16px",
           fontSize: "15px",
+          marginBottom: "18px",
         }}
       >
-        ORTHOPAEDIC • SHOULDER • SPORTS INJURY SURGEON
+        ORTHOPAEDIC • SHOULDER • SPORTS MEDICINE
       </p>
 
       <h1
         style={{
-          fontSize: "64px",
+          fontSize: "72px",
+          lineHeight: "1.05",
           color: "#0B3C5D",
           fontWeight: 800,
-          lineHeight: "1.05",
           margin: 0,
         }}
       >
@@ -33,43 +33,75 @@ export default function HeroContent() {
         Meena
       </h1>
 
-      <p
+      <div
         style={{
-          marginTop: "20px",
-          fontSize: "24px",
-          color: "#1976D2",
-          fontWeight: 600,
+          marginTop: "22px",
+          display: "inline-block",
+          background: "#EEF6FF",
+          color: "#0B3C5D",
+          padding: "12px 20px",
+          borderRadius: "999px",
+          fontWeight: 700,
+          fontSize: "17px",
         }}
       >
-        MS (Orthopaedics) • Fellowship in Advanced Shoulder Surgery
-      </p>
+        MS (Orthopaedics) • Advanced Shoulder Fellowship
+      </div>
 
       <p
         style={{
-          marginTop: "18px",
+          marginTop: "22px",
           color: "#555",
-          fontSize: "19px",
+          fontSize: "20px",
           lineHeight: "34px",
           maxWidth: "650px",
         }}
       >
-        Assistant Professor, Department of Orthopaedics,
+        Assistant Professor,
+        <br />
+        Department of Orthopaedics,
         Jawaharlal Nehru Medical College, Ajmer.
       </p>
 
-      <p
+      <div
         style={{
-          marginTop: "12px",
-          color: "#666",
-          fontSize: "18px",
-          lineHeight: "32px",
-          maxWidth: "650px",
+          marginTop: "28px",
+          display: "grid",
+          gridTemplateColumns: "repeat(2, minmax(180px, 1fr))",
+          gap: "14px",
+          maxWidth: "520px",
         }}
       >
-        Delivering evidence-based orthopaedic care with expertise in shoulder
-        surgery, trauma, arthroscopy, sports injuries, joint replacement and
-        spine disorders.
-      </p>
+        {[
+          "Shoulder Surgery",
+          "Arthroscopy",
+          "Joint Replacement",
+          "Trauma Care",
+        ].map((item) => (
+          <div
+            key={item}
+            style={{
+              display: "flex",
+              alignItems: "center",
+              gap: "10px",
+              color: "#0B3C5D",
+              fontWeight: 600,
+              fontSize: "17px",
+            }}
+          >
+            <span
+              style={{
+                color: "#16A34A",
+                fontSize: "18px",
+              }}
+            >
+              ✓
+            </span>
+
+            {item}
+          </div>
+        ))}
+      </div>
     </div>
   );
 }
