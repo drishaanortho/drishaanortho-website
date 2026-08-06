@@ -1,3 +1,6 @@
+import Navbar from "../../components/Navbar";
+import Footer from "../../components/Footer";
+import StickyContactBar from "../../components/StickyContactBar";
 import ShoulderFAQ from "../../components/ShoulderFAQ";
 import WhyChooseShoulder from "../../components/WhyChooseShoulder";
 import ShoulderConsult from "../../components/ShoulderConsult";
@@ -7,17 +10,19 @@ import ShoulderConditions from "../../components/ShoulderConditions";
 export default function ShoulderPage() {
   return (
     <main style={{ fontFamily: "Arial, sans-serif", color: "#333" }}>
+      <Navbar />
       {/* Hero Section */}
       <section
         style={{
           background: "linear-gradient(135deg,#0B3C5D,#1E88E5)",
           color: "white",
-          padding: "70px 20px",
+          padding: "140px 20px 80px",
           textAlign: "center",
         }}
       >
         <h1 style={{ fontSize: "42px", marginBottom: "15px" }}>
-          Shoulder Disorders
+          Advanced Shoulder Surgery &
+Sports Injury Care
         </h1>
 
         <p
@@ -65,6 +70,8 @@ export default function ShoulderPage() {
       <ShoulderConsult />
       <WhyChooseShoulder />
       <ShoulderFAQ />
+      <Footer />
+<StickyContactBar />
     </main>
   );
 }
