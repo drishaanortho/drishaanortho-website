@@ -226,3 +226,119 @@ export default function ShoulderSurgeryPage() {
           </div>
         </div>
       </section>
+            <section
+        style={{
+          background: "#F8FBFF",
+          padding: "90px 20px",
+        }}
+      >
+        <div
+          style={{
+            maxWidth: "1200px",
+            margin: "0 auto",
+          }}
+        >
+          <h2
+            style={{
+              textAlign: "center",
+              color: "#0B3C5D",
+              fontSize: "42px",
+              marginBottom: "50px",
+            }}
+          >
+            Treatment Options
+          </h2>
+
+          <div
+            style={{
+              display: "grid",
+              gridTemplateColumns: "repeat(auto-fit,minmax(280px,1fr))",
+              gap: "25px",
+            }}
+          >
+            {[
+              {
+                title: "Non-Surgical Treatment",
+                text: "Medication, physiotherapy, activity modification and guided rehabilitation for appropriate cases.",
+              },
+              {
+                title: "Arthroscopic Shoulder Surgery",
+                text: "Minimally invasive keyhole surgery for rotator cuff tears, instability, labral injuries and impingement.",
+              },
+              {
+                title: "Shoulder Replacement",
+                text: "Advanced shoulder replacement surgery for severe arthritis and complex shoulder conditions.",
+              },
+            ].map((item) => (
+              <div
+                key={item.title}
+                style={{
+                  background: "#fff",
+                  borderRadius: "20px",
+                  padding: "30px",
+                  boxShadow: "0 12px 30px rgba(0,0,0,.08)",
+                }}
+              >
+                <h3
+                  style={{
+                    color: "#0B3C5D",
+                    marginBottom: "15px",
+                  }}
+                >
+                  {item.title}
+                </h3>
+
+                <p
+                  style={{
+                    color: "#555",
+                    lineHeight: "30px",
+                  }}
+                >
+                  {item.text}
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section
+        style={{
+          background: "#ffffff",
+          padding: "90px 20px",
+        }}
+      >
+        <div
+          style={{
+            maxWidth: "900px",
+            margin: "0 auto",
+            textAlign: "center",
+          }}
+        >
+          <h2
+            style={{
+              color: "#0B3C5D",
+              fontSize: "40px",
+              marginBottom: "25px",
+            }}
+          >
+            Recovery & Rehabilitation
+          </h2>
+
+          <p
+            style={{
+              color: "#555",
+              fontSize: "18px",
+              lineHeight: "34px",
+            }}
+          >
+            Recovery depends on the type of shoulder condition and treatment
+            performed. A structured rehabilitation program, regular follow-up
+            and physiotherapy help patients regain strength, mobility and
+            return to their normal activities safely.
+          </p>
+        </div>
+      </section>
+      </main>
+);
+}
