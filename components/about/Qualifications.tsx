@@ -3,37 +3,37 @@ export default function Qualifications() {
     {
       icon: "🎓",
       title: "MBBS",
+      subtitle: "Bachelor of Medicine & Bachelor of Surgery",
       description:
-        "Bachelor of Medicine & Bachelor of Surgery with a strong foundation in clinical medicine and patient care.",
+        "Built a strong clinical foundation in medicine, surgery and comprehensive patient care.",
     },
     {
       icon: "🦴",
       title: "MS (Orthopaedics)",
+      subtitle: "Postgraduate Specialization",
       description:
-        "Postgraduate specialization in Orthopaedic Surgery with advanced training in trauma and musculoskeletal disorders.",
+        "Advanced training in trauma, fractures, joint disorders, musculoskeletal conditions and orthopaedic surgery.",
     },
     {
       icon: "🏆",
-      title: "Fellowship in Advanced Shoulder Surgery",
+      title: "Advanced Shoulder Fellowship",
+      subtitle: "Fellowship Training",
       description:
-        "Advanced fellowship focused on shoulder disorders, arthroscopy, sports injuries and reconstruction.",
+        "Specialized fellowship focused on shoulder surgery, arthroscopy, sports injuries and advanced reconstruction.",
     },
   ];
 
   return (
-    <section
-      style={{
-        marginTop: "70px",
-      }}
-    >
+    <section style={{ marginTop: "90px" }}>
       <p
         style={{
           textAlign: "center",
           color: "#1976D2",
           fontWeight: 700,
-          letterSpacing: "2px",
+          letterSpacing: "3px",
           textTransform: "uppercase",
-          marginBottom: "10px",
+          marginBottom: "12px",
+          fontSize: "15px",
         }}
       >
         Education & Training
@@ -43,9 +43,9 @@ export default function Qualifications() {
         style={{
           textAlign: "center",
           color: "#0B3C5D",
-          fontSize: "42px",
+          fontSize: "44px",
           fontWeight: 800,
-          marginBottom: "50px",
+          marginBottom: "55px",
         }}
       >
         Qualifications & Academic Profile
@@ -54,7 +54,7 @@ export default function Qualifications() {
       <div
         style={{
           display: "grid",
-          gridTemplateColumns: "repeat(auto-fit,minmax(280px,1fr))",
+          gridTemplateColumns: "repeat(auto-fit,minmax(320px,1fr))",
           gap: "30px",
         }}
       >
@@ -63,23 +63,24 @@ export default function Qualifications() {
             key={item.title}
             style={{
               background: "#fff",
-              borderRadius: "22px",
-              padding: "28px",
-              borderTop: "4px solid #D4AF37",
-              boxShadow: "0 12px 30px rgba(0,0,0,.08)",
+              borderRadius: "26px",
+              padding: "35px",
+              borderTop: "6px solid #D4AF37",
+              boxShadow: "0 15px 35px rgba(0,0,0,.08)",
+              minHeight: "320px",
             }}
           >
             <div
               style={{
-                width: "54px",
-                height: "54px",
-                borderRadius: "14px",
-                background: "#0B3C5D",
+                width: "72px",
+                height: "72px",
+                borderRadius: "18px",
+                background: "linear-gradient(135deg,#0B3C5D,#1976D2)",
                 display: "flex",
-                alignItems: "center",
                 justifyContent: "center",
-                fontSize: "28px",
-                marginBottom: "20px",
+                alignItems: "center",
+                fontSize: "34px",
+                marginBottom: "24px",
               }}
             >
               {item.icon}
@@ -89,7 +90,7 @@ export default function Qualifications() {
               style={{
                 color: "#0B3C5D",
                 fontSize: "28px",
-                margin: "0 0 14px",
+                marginBottom: "10px",
               }}
             >
               {item.title}
@@ -97,10 +98,20 @@ export default function Qualifications() {
 
             <p
               style={{
+                color: "#D4AF37",
+                fontWeight: 700,
+                marginBottom: "18px",
+                fontSize: "16px",
+              }}
+            >
+              {item.subtitle}
+            </p>
+
+            <p
+              style={{
                 color: "#64748B",
-                fontSize: "17px",
                 lineHeight: "30px",
-                margin: 0,
+                fontSize: "17px",
               }}
             >
               {item.description}
