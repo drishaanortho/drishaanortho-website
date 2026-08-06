@@ -1,4 +1,11 @@
 export default function HeroContent() {
+  const expertise = [
+    "Shoulder Surgery",
+    "Arthroscopy",
+    "Joint Replacement",
+    "Trauma Care",
+  ];
+
   return (
     <div
       style={{
@@ -22,9 +29,9 @@ export default function HeroContent() {
       <h1
         style={{
           fontSize: "72px",
-          lineHeight: "1.05",
-          color: "#0B3C5D",
           fontWeight: 800,
+          color: "#0B3C5D",
+          lineHeight: "1.05",
           margin: 0,
         }}
       >
@@ -39,7 +46,7 @@ export default function HeroContent() {
           display: "inline-block",
           background: "#EEF6FF",
           color: "#0B3C5D",
-          padding: "12px 20px",
+          padding: "12px 22px",
           borderRadius: "999px",
           fontWeight: 700,
           fontSize: "17px",
@@ -50,34 +57,30 @@ export default function HeroContent() {
 
       <p
         style={{
-          marginTop: "22px",
+          marginTop: "24px",
           color: "#555",
           fontSize: "20px",
           lineHeight: "34px",
-          maxWidth: "650px",
+          fontWeight: 500,
         }}
       >
-        Assistant Professor,
+        🏥 Assistant Professor,
         <br />
         Department of Orthopaedics,
+        <br />
         Jawaharlal Nehru Medical College, Ajmer.
       </p>
 
       <div
         style={{
-          marginTop: "28px",
+          marginTop: "30px",
           display: "grid",
-          gridTemplateColumns: "repeat(2, minmax(180px, 1fr))",
-          gap: "14px",
-          maxWidth: "520px",
+          gridTemplateColumns: "repeat(2,minmax(170px,1fr))",
+          gap: "15px",
+          maxWidth: "500px",
         }}
       >
-        {[
-          "Shoulder Surgery",
-          "Arthroscopy",
-          "Joint Replacement",
-          "Trauma Care",
-        ].map((item) => (
+        {expertise.map((item) => (
           <div
             key={item}
             style={{
@@ -89,15 +92,9 @@ export default function HeroContent() {
               fontSize: "17px",
             }}
           >
-            <span
-              style={{
-                color: "#16A34A",
-                fontSize: "18px",
-              }}
-            >
+            <span style={{ color: "#16A34A", fontSize: "18px" }}>
               ✓
             </span>
-
             {item}
           </div>
         ))}
