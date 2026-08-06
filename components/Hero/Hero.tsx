@@ -8,28 +8,30 @@ export default function Hero() {
     <>
       <section
         style={{
-          background: "#F8FBFF",
+          background:
+            "linear-gradient(135deg,#F9FCFF 0%,#EEF7FF 60%,#FFFFFF 100%)",
           padding: "140px 20px 80px",
         }}
       >
         <div
           style={{
-            maxWidth: "1250px",
+            maxWidth: "1280px",
             margin: "0 auto",
             display: "flex",
             flexWrap: "wrap",
             alignItems: "center",
             justifyContent: "space-between",
-            gap: "60px",
+            gap: "100px",
           }}
         >
           <div
             style={{
               flex: 1,
-              minWidth: "320px",
+              minWidth: "340px",
             }}
           >
             <HeroContent />
+
             <HeroButtons />
           </div>
 
