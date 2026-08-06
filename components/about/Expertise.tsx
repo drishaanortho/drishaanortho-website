@@ -1,48 +1,96 @@
 export default function Expertise() {
-  const items = [
-    "Shoulder Surgery",
-    "Sports Injuries",
-    "Arthroscopy",
-    "Joint Replacement",
-    "Trauma & Fracture Care",
-    "Spine Disorders",
+  const expertise = [
+    {
+      icon: "🦴",
+      title: "Shoulder Surgery",
+    },
+    {
+      icon: "⚽",
+      title: "Sports Injuries",
+    },
+    {
+      icon: "🔬",
+      title: "Arthroscopy",
+    },
+    {
+      icon: "🦿",
+      title: "Joint Replacement",
+    },
+    {
+      icon: "🚑",
+      title: "Trauma & Fracture Care",
+    },
+    {
+      icon: "🩺",
+      title: "Spine Disorders",
+    },
   ];
 
   return (
-    <section style={{ marginTop: "55px" }}>
-      <h3
+    <section style={{ marginTop: "90px" }}>
+      <p
         style={{
-          fontSize: "34px",
-          color: "#0B3C5D",
-          marginBottom: "28px",
           textAlign: "center",
+          color: "#1976D2",
+          fontWeight: 700,
+          letterSpacing: "3px",
+          textTransform: "uppercase",
+          marginBottom: "10px",
+          fontSize: "15px",
+        }}
+      >
+        SPECIALIZED CARE
+      </p>
+
+      <h2
+        style={{
+          textAlign: "center",
+          color: "#0B3C5D",
+          fontSize: "44px",
+          fontWeight: 800,
+          marginBottom: "55px",
         }}
       >
         Areas of Expertise
-      </h3>
+      </h2>
 
       <div
         style={{
-          display: "flex",
-          flexWrap: "wrap",
-          justifyContent: "center",
-          gap: "16px",
+          display: "grid",
+          gridTemplateColumns: "repeat(auto-fit,minmax(260px,1fr))",
+          gap: "25px",
         }}
       >
-        {items.map((item) => (
+        {expertise.map((item) => (
           <div
-            key={item}
+            key={item.title}
             style={{
-              background: "#0B3C5D",
-              color: "#fff",
-              padding: "14px 22px",
-              borderRadius: "999px",
-              fontWeight: 600,
-              fontSize: "16px",
-              boxShadow: "0 12px 25px rgba(11,60,93,.15)",
+              background: "#ffffff",
+              borderRadius: "22px",
+              padding: "30px",
+              textAlign: "center",
+              boxShadow: "0 12px 30px rgba(0,0,0,0.08)",
+              borderTop: "5px solid #1976D2",
             }}
           >
-            {item}
+            <div
+              style={{
+                fontSize: "46px",
+                marginBottom: "18px",
+              }}
+            >
+              {item.icon}
+            </div>
+
+            <h3
+              style={{
+                color: "#0B3C5D",
+                fontSize: "22px",
+                margin: 0,
+              }}
+            >
+              {item.title}
+            </h3>
           </div>
         ))}
       </div>
